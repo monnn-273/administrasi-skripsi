@@ -1437,7 +1437,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `status`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+<<<<<<< HEAD
 (1, 'Annelis Mellema', 'annelis@gmail.com', 'mahasiswa', NULL, '$2y$10$imVIR.XI8iNJ0x2usersm1tPYt.oHGVa.K5mjNAbwn0v/dX5MzxNu4rZN.', 'IcRZIJnFJu2cE4vAUrdGDmWmQc9X40gSRbeyPkgw6uNxNeIqReNNUhw964W8', '2022-05-24 03:02:06', '2022-05-24 03:02:06'),
+=======
+(1, 'Annelis Mellema', 'annelis@gmail.com', 'mahasiswa', NULL, '$2y$10$imVIR.XI8iNJ0x2m1tPYt.oHGVa.K5mjNAbwn0v/dX5MzxNu4rZN.', 'IcRZIJnFJu2cE4vAUrdGDmWmQc9X40gSRbeyPkgw6uNxNeIqReNNUhw964W8', '2022-05-24 03:02:06', '2022-05-24 03:02:06'),
+>>>>>>> e6daceb2101d88dbfc6440c20f801d3df1589255
 (2, 'Regis Landegre', 'regis@gmail.com', 'mahasiswa', NULL, '$2y$10$38.mMDp.avH0rJKv3jGZ/Or9DAWPmcyh858thfnDcqmVy0.uIfH0m', NULL, '2022-05-24 03:14:50', '2022-05-24 03:14:50'),
 (3, 'Seira Loyard', 'seira@gmail.com', 'mahasiswa', NULL, '$2y$10$7UzWSq9U/FazkdaVzC7MzeIAOluLkB7zczJrN9hM2N59lfpQm.F6G', NULL, '2022-05-24 03:16:27', '2022-05-24 03:16:27'),
 (4, 'Rael Kertia', 'rael@gmail.com', 'mahasiswa', NULL, '$2y$10$whxxrnbTIZqsqMFQyJPpN.X6.3D8d549mykgErjlbFrZD7dizJLFK', NULL, '2022-05-24 03:18:43', '2022-05-24 03:18:43'),
