@@ -15,21 +15,21 @@
     <li class="sidebar-item">
         <a href="/mahasiswa/pra_sempro" class='sidebar-link'>
 
-            <span>Pra Seminar Proposal</span>
+            <span>Seminar Proposal</span>
         </a>
     </li>
 
     <li class="sidebar-item ">
         <a href="/mahasiswa/pra_semhas" class='sidebar-link'>
 
-            <span>Pra Seminar Hasil</span>
+            <span>Seminar Hasil</span>
         </a>
     </li>
 
     <li class="sidebar-item  ">
         <a href="/mahasiswa/pra_sidang" class='sidebar-link'>
 
-            <span>Pra Sidang Meja Hijau</span>
+            <span>Sidang Meja Hijau</span>
         </a>
     </li>
 
@@ -73,41 +73,49 @@
 
             <section id="basic-horizontal-layouts">
                 <div class="row match-height">
-                    <div class="col-xl-">
+                    <div class="col-md-10">
                         <div class="row">
                             <div class="card card-outline-secondary">
                                 <br><br>
-                                <center>
-                                    @if (Auth::user()->mhs->foto != null)
-                                        <img class="image" src="../main/photos/{{ Auth::user()->mhs->foto }}"
-                                            alt="lecturer_image" style="height: 200px; width:200px" />
+                                @if (Auth::user()->mhs->foto != null)
+                                    <div class="card-body">
+                                        <img class="card-img-top img-fluid mt-2"
+                                            src="../main/photos/{{ Auth::user()->mhs->foto }}" alt="lecturer_image"
+                                            style="height: 200px; width:200px" />
+
+                                        {{-- <img class="image" src="../main/photos/{{ Auth::user()->mhs->foto }}"
+                                        alt="lecturer_image" style="height: 200px; width:200px" /> --}}
                                     @else
-                                        <img class="card-img-top img-fluid" src="../main/photos/graduate_student.png"
-                                            alt="default_student_image" style="height: 200px; width:200px" />
-                                        <p><i>Anda belum mengunggah foto profile.</i></p>
-                                    @endif
-                                </center>
+                                        <div class="card-body">
+                                            <img class="card-img-top img-fluid mt-5"
+                                                src="../main/photos/graduate_student.png" alt="default_student_image"
+                                                style="height: 200px; width:200px" />
+                                            <p><i>Anda belum mengunggah foto profile.</i></p>
+                                @endif
+
+                                {{-- <img class="card-img-top img-fluid mt-5" src="../main/photos/graduate_student.png"
+                                        alt="default_student_image" style="height: 200px; width:200px" />
+                                    <p><i>Anda belum mengunggah foto profile.</i></p>
+                                @endif --}}
                                 <!-- ALERT SECTION -->
-                                <center>
-                                    <div class="col-xl-6 mb-6">
-                                        <div class="table-responsive">
-                                            @if (session('status'))
-                                                <div class="alert alert-success alert-dismissible show fade">
-                                                    <i class="bi bi-check-circle"></i> {{ session('status') }}
-                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                            @endif
-                                            @if (session('prohibited'))
-                                                <div class="alert alert-danger alert-dismissible show fade">
-                                                    <i class="bi bi-exclamation-triangle"></i> {{ session('prohibited') }}
-                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                            @endif
-                                        </div>
+                                <div class="col-md-8 mb-6">
+                                    <div class="table-responsive">
+                                        @if (session('status'))
+                                            <div class="alert alert-success alert-dismissible show fade">
+                                                <i class="bi bi-check-circle"></i> {{ session('status') }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                        @endif
+                                        @if (session('prohibited'))
+                                            <div class="alert alert-danger alert-dismissible show fade">
+                                                <i class="bi bi-exclamation-triangle"></i> {{ session('prohibited') }}
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                        @endif
                                     </div>
-                                </center>
+                                </div>
                                 <!-- END ALERT SECTION -->
                                 <div class="row align-items-center m-5">
                                     <div class="col-md mb-5">

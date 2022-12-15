@@ -64,14 +64,14 @@
                         <h3>Seminar Hasil</h3>
                         <p class="text-subtitle text-muted">Berkas Administrasi Seminar Hasil</p>
                     </div>
-                    <div class="col-12 col-md-6 order-md-2 order-first">
+                    {{-- <div class="col-12 col-md-6 order-md-2 order-first">
                         <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/mahasiswa/dashboard">Mahasiswa</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Seminar Hasil</li>
                             </ol>
                         </nav>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 

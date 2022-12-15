@@ -341,9 +341,13 @@ class MahasiswaController extends Controller
                 's.judul_skripsi',
                 'j.tanggal_sidang',
                 'd.nama_dosbing1',
+                'd.nip_dosbing1',
                 'd.nama_dosbing2',
+                'd.nip_dosbing2',
                 'dp.nama_dosen_penguji1',
-                'dp.nama_dosen_penguji2'
+                'dp.nip_dosen_penguji1',
+                'dp.nama_dosen_penguji2',
+                'dp.nip_dosen_penguji2'
             )
             ->where('m.id_user', '=', Auth::user()->id)
             ->first();

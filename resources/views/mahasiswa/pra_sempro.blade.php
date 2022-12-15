@@ -155,6 +155,23 @@
                                         aria-label="Close"></button>
                                 </div>
                             @endif
+                            <h6>Form Jurnal</h6>
+                            <p> Berikut contoh jurnal yang dapat digunakan sebagai panduan. Silahkan unduh melalui
+                                tombol unduh dibawah ini. </p>
+                            @if ($mhs->no_statusAkses > 6)
+                                <div class="d-grid gap-2 d-md-flex justify-content">
+                                    <a href="/mahasiswa/format_jurnal" class="btn btn-primary btn-sm" target="blank">
+                                        <i class="bi bi-download"></i> Unduh Jurnal
+                                    </a>
+                                </div>
+                            @else
+                                <div class="d-grid gap-2 d-md-flex justify-content">
+                                    <a href="#" class="btn btn-primary btn-sm disabled">
+                                        <i class="bi bi-download"></i> Unduh Jurnal
+                                    </a>
+                                </div>
+                            @endif
+                            <br>
                             {{-- input file exum --}}
                             @if ($exum_checker != 1)
                                 <div class="alert alert-success alert-dismissible show fade">
@@ -197,7 +214,7 @@
                                                 gap-2 @endif
                                             d-md-flex justify-content">
                                 <a href="/mahasiswa/download_exum" target="blank" class="btn btn-primary btn-sm"><i
-                                        class="bi bi-printer-fill"></i> Unduh
+                                        class="bi bi-download"></i> Unduh Exum
                                 </a>
                             </div>
                             {{-- <div class="d-grid gap-2 d-md-flex justify-content">

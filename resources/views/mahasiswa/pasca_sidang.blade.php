@@ -15,21 +15,21 @@
     <li class="sidebar-item">
         <a href="/mahasiswa/pra_seminar_proposal" class='sidebar-link'>
 
-            <span>Pra Seminar Proposal</span>
+            <span>Seminar Proposal</span>
         </a>
     </li>
 
     <li class="sidebar-item">
         <a href="/mahasiswa/pra_semhas" class='sidebar-link'>
 
-            <span>Pra Seminar Hasil</span>
+            <span>Seminar Hasil</span>
         </a>
     </li>
 
     <li class="sidebar-item">
         <a href="/mahasiswa/pra_sidang" class='sidebar-link'>
 
-            <span>Pra Sidang Meja Hijau</span>
+            <span>Sidang Meja Hijau</span>
         </a>
     </li>
 
@@ -61,16 +61,16 @@
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
                         <h3>Pasca Sidang Meja Hijau </h3>
-                        <p class="text-subtitle text-muted">Proses lanjutan pasca sidang meja hijau</p>
+                        <p class="text-subtitle text-muted">Administrasi setelah lulus Sidang Sarjana</p>
                     </div>
-                    <div class="col-12 col-md-6 order-md-2 order-first">
+                    {{-- <div class="col-12 col-md-6 order-md-2 order-first">
                         <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/mahasiswa/dashboard">Mahasiswa</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Pasca Sidang Meja Hijau</li>
                             </ol>
                         </nav>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -79,21 +79,20 @@
                 <div class="col-8">
                     <div class="card">
                         <div class="card-header">
-                            <h3>01. Penggandaan skripsi</h4>
+                            <h3>1. Form Persetujuan Penggandaan Skripsi</h4>
                         </div>
                         <div class="card-body">
-                            <p> Formulir ini Anda butuhkan jika hendak menggandakan skripsi.
-                                Silahkan cetak formulir melalui <i>button</i> berikut.</p>
+                            <p> Silahkan unduh form persetujuan penggandaan skripsi melalui tombol unduh dibawah ini. </p>
 
                             @if ($mhs->no_statusAkses > 6)
                                 <div class="d-grid gap-2 d-md-flex justify-content">
                                     <a href="/mahasiswa/penggandaan_skripsi" target="blank"
-                                        class="btn btn-success btn-sm"><i class="bi bi-printer-fill"></i> Cetak </a>
+                                        class="btn btn-success btn-sm"><i class="bi bi-download"></i> Unduh </a>
                                 </div>
                             @else
                                 <div class="d-grid gap-2 d-md-flex justify-content">
-                                    <a href="#" class="btn btn-success btn-sm disabled"><i
-                                            class="bi bi-printer-fill"></i> Cetak </a>
+                                    <a href="#" class="btn btn-success btn-sm disabled"><i class="bi bi-download"></i>
+                                        Unduh </a>
                                 </div>
                             @endif
                         </div>
@@ -103,7 +102,7 @@
             <!-- end submenu 1 -->
 
             <!-- submenu 2 -->
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-8">
                     <div class="card">
                         <div class="card-header">
@@ -128,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- end submenu 2 -->
         </div>
     @endsection

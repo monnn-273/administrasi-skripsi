@@ -1,7 +1,7 @@
 @extends('mahasiswa/layout');
 
 @section('title')
-    <title>Mahasiswa - Pra Sidang Meja Hijau</title>
+    <title>Mahasiswa - Sidang Meja Hijau</title>
 @endsection
 
 @section('sidebar')
@@ -15,21 +15,21 @@
     <li class="sidebar-item">
         <a href="/mahasiswa/pra_sempro" class='sidebar-link'>
 
-            <span>Pra Seminar Proposal</span>
+            <span>Seminar Proposal</span>
         </a>
     </li>
 
     <li class="sidebar-item ">
         <a href="/mahasiswa/pra_semhas" class='sidebar-link'>
 
-            <span>Pra Seminar Hasil</span>
+            <span>Seminar Hasil</span>
         </a>
     </li>
 
     <li class="sidebar-item  active">
         <a href="/mahasiswa/pra_sidang" class='sidebar-link'>
 
-            <span>Pra Sidang Meja Hijau</span>
+            <span>Sidang Meja Hijau</span>
         </a>
     </li>
 
@@ -60,17 +60,17 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-12 col-md-6 order-md-1 order-last">
-                        <h3>Pra Sidang Meja Hijau</h3>
-                        <p class="text-subtitle text-muted">Berkas Administrasi Pra Sidang Meja Hijau</p>
+                        <h3>Sidang Meja Hijau</h3>
+                        <p class="text-subtitle text-muted">Berkas Administrasi Sidang Meja Hijau</p>
                     </div>
-                    <div class="col-12 col-md-6 order-md-2 order-first">
+                    {{-- <div class="col-12 col-md-6 order-md-2 order-first">
                         <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="/mahasiswa/dashboard">Mahasiswa</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Pra Sidang Hijau</li>
+                                <li class="breadcrumb-item active" aria-current="page">Sidang Hijau</li>
                             </ol>
                         </nav>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -80,7 +80,7 @@
                 <div class="card">
                     <div class="card-body">
                         <!-- progress seminar hasil akan didapat pada fitur ini -->
-                        <h5>a) Lembar Kendali Bimbingan Skripsi Pra Sidang Meja Hijau</h5>
+                        <h5>1. Lembar Kendali Bimbingan Skripsi Sidang Meja Hijau</h5>
                         <p> Formulir ini Anda butuhkan sebelum sidang meja hijau. Data Anda terkait judul skripsi,
                             tanggal bimbingan serta catatan selama bimbingan akan di-record menggunakan formulir ini.
                             Silahkan cetak formulir atau preview untuk memastikan
@@ -101,10 +101,11 @@
 
                         <hr><br>
 
-                        <h5>b) Jadwal Sidang Meja Hijau</h5>
-                        <p> Jadwal sidang meja hijau akan ditentukan oleh Program Studi. Silahkan periksa jadwal seminar
-                            proposal
-                            Anda melalui <i>button</i> berikut. </p>
+                        <h5>2. Jadwal Sidang Meja Hijau</h5>
+                        <p> Jadwal sidang meja hijau akan ditentukan oleh Program Studi apabila Anda telah mengumpulkan
+                            semua berkas administrasi yang dibutuhkan. Silahkan preview jadwal sidang meja hijau untuk
+                            mengetahui jadwal sidang Anda.
+                        </p>
 
                         @if ($mhs->no_statusAkses > 5)
                             <div class="d-grid gap-2 d-md-flex justify-content">
@@ -115,8 +116,9 @@
                         @else
                             <div class="d-grid gap-2 d-md-flex justify-content">
                                 <!-- preview akan membawa mahasiswa ke halaman form yang ingin diunduh -->
-                                <a href="#" class="btn btn-primary btn-sm disabled" target="blank"> <i
-                                        class="bi bi-eye"></i> Lihat Jadwal </a>
+                                <p> Jadwal sidang belum ditentukan </p>
+                                {{-- <a href="#" class="btn btn-primary btn-sm disabled" target="blank"> <i
+                                        class="bi bi-eye"></i> Lihat Jadwal </a> --}}
                             </div>
                         @endif
                     </div>
