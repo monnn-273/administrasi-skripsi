@@ -7,22 +7,22 @@
 @section('sidebar')
     <li class="sidebar-item ">
         <a href="dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub ">
-        <a href="{{route('mahasiswa_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('mhs_aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('mhs_aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('lulus')}}">Lulus / Alumni</a>
+                <a href="{{ route('lulus') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -30,13 +30,13 @@
     <li class="sidebar-item  active">
         <a href="jadwalSeminarSidang" class='sidebar-link'>
             <i class="bi bi-graph-up"></i>
-                <span>Jadwal Seminar/Sidang</span>
+            <span>Jadwal Seminar/Sidang</span>
         </a>
     </li>
 @endsection
-            
+
 @section('content')
-<?php use Carbon\Carbon ?>
+    <?php use Carbon\Carbon; ?>
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
@@ -71,18 +71,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <?php $i = 1 ?>
-                    @foreach($query as $qr)
-                    <tr>
-                        <td>{{$i}}</td>
-                        <td>{{$qr->nama}}</td>
-                        <td>{{$qr->nim}}</td>
-                        <td>{{Carbon::createFromFormat('H:i:s', $qr->waktu)->format('H:i')}} WIB</td>
-                        <td>{{$qr->tempat}}</td>
-                        <td>{{Carbon::parse($qr->tanggal_sidang)->translatedFormat('l , d F Y')}}</td>
-                    </tr>
-                    <?php $i++ ?>
-                    @endforeach
+                        <?php $i = 1; ?>
+                        @foreach ($query as $qr)
+                            <tr>
+                                <td>{{ $i }}</td>
+                                <td>{{ $qr->nama }}</td>
+                                <td>{{ $qr->nim }}</td>
+                                <td>{{ Carbon::createFromFormat('H:i:s', $qr->waktu)->format('H:i') }} WIB</td>
+                                <td>{{ $qr->tempat }}</td>
+                                <td>{{ Carbon::parse($qr->tanggal_sidang)->translatedFormat('l , d F Y') }}</td>
+                            </tr>
+                            <?php $i++; ?>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -7,22 +7,22 @@
 @section('sidebar')
     <li class="sidebar-item ">
         <a href="/dosen/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub active">
-        <a href="{{route('mahasiswa_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('mhs_aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('mhs_aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('lulus')}}">Lulus / Alumni</a>
+                <a href="{{ route('lulus') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -30,11 +30,11 @@
     <li class="sidebar-item  ">
         <a href="/dosen/jadwalSeminarSidang" class='sidebar-link'>
             <i class="bi bi-calendar-date"></i>
-                <span>Jadwal Seminar/Sidang</span>
+            <span>Jadwal Seminar/Sidang</span>
         </a>
     </li>
 @endsection
-            
+
 @section('content')
     <div class="page-heading">
         <div class="page-title">
@@ -68,27 +68,27 @@
                     <tbody>
                         <tr>
                             <td>Nama</td>
-                            <td>{{$query[0]->nama}}</td>
+                            <td>{{ $query[0]->nama }}</td>
                         </tr>
                         <tr>
                             <td>Nim</td>
-                            <td>{{$query[0]->nim}}</td>
+                            <td>{{ $query[0]->nim }}</td>
                         </tr>
                         <tr>
                             <td>Judul Skripsi</td>
-                            <td>{{$query[0]->judul_skripsi}}</td>
+                            <td>{{ $query[0]->judul_skripsi }}</td>
                         </tr>
                         <tr>
                             <td>Tahun Masuk</td>
-                            <td>{{$query[0]->angkatan}}</td>
+                            <td>{{ $query[0]->angkatan }}</td>
                         </tr>
-                        <?php $i =1 ?>
-                        @foreach($query as $qr)
-                        <tr>
-                            <td>Dosen Pembimbing {{$i}}</td>
-                            <td>{{$qr->dosen_pembimbing}}</td>
-                        </tr>
-                        <?php ++$i ?>
+                        <?php $i = 1; ?>
+                        @foreach ($query as $qr)
+                            <tr>
+                                <td>Dosen Pembimbing {{ $i }}</td>
+                                <td>{{ $qr->dosen_pembimbing }}</td>
+                            </tr>
+                            <?php ++$i; ?>
                         @endforeach
                     </tbody>
                 </table>

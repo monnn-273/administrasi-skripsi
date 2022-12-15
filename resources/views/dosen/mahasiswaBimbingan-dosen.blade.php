@@ -7,22 +7,22 @@
 @section('sidebar')
     <li class="sidebar-item ">
         <a href="dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub active">
-        <a href="{{route('mahasiswa_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('mhs_aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('mhs_aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('lulus')}}">Lulus / Alumni</a>
+                <a href="{{ route('lulus') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -30,11 +30,11 @@
     <li class="sidebar-item  ">
         <a href="jadwalSeminarSidang" class='sidebar-link'>
             <i class="bi bi-calendar-date"></i>
-                <span>Jadwal Seminar/Sidang</span>
+            <span>Jadwal Seminar/Sidang</span>
         </a>
     </li>
 @endsection
-            
+
 @section('content')
     <div class="page-heading">
         <div class="page-title">
@@ -56,43 +56,44 @@
     </div>
 
     <div class="row">
-            <!-- FORM UNTUK CARI DATA MAHASISWA -->
-            <div class="col-xl-5">
-                <form action="{{route('search_mhs_aktif')}}">
-                    @csrf
-                    <div class="row">
-                        <div class="col-xl-11">
-                            <input type="text" class="form-control" name="keyword" placeholder="Cari berdasarkan nama, nim, status skripsi, dsb...">
-                        </div>
-                        <div class="col-xl-1">
-                            <button class="btn btn-primary" type="submit"><i class="b bi-search"></i> </button>
-                        </div>
+        <!-- FORM UNTUK CARI DATA MAHASISWA -->
+        <div class="col-xl-5">
+            <form action="{{ route('search_mhs_aktif') }}">
+                @csrf
+                <div class="row">
+                    <div class="col-xl-11">
+                        <input type="text" class="form-control" name="keyword"
+                            placeholder="Cari berdasarkan nama, nim, status skripsi, dsb...">
                     </div>
-                </form>
-            </div>
-             <!-- END FORM CARI MAHASISWA -->
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary" type="submit"><i class="b bi-search"></i> </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- END FORM CARI MAHASISWA -->
 
-             <div class="col-xl-1"></div>
+        <div class="col-xl-1"></div>
         <!-- FORM  FILTER -->
         <div class="col-xl-5">
-                <form action="{{route('filter')}}">
-                    @csrf
-                    <div class="row">
-                        <div class="col-xl-11">
-                            <select class="form-control " id="angkatan" name="angkatan" required >
-                                <option value="">Cari berdasarkan tahun angkatan</option>
-                                @foreach($angkatan as $akt)
-                                    <option  value="{{$akt->angkatan}}">{{$akt->angkatan}}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-xl-1">
-                            <button class="btn btn-primary" type="submit"><i class="fa fa-filter"></i> </button>
-                        </div>
+            <form action="{{ route('filter') }}">
+                @csrf
+                <div class="row">
+                    <div class="col-xl-11">
+                        <select class="form-control " id="angkatan" name="angkatan" required>
+                            <option value="">Cari berdasarkan tahun angkatan</option>
+                            @foreach ($angkatan as $akt)
+                                <option value="{{ $akt->angkatan }}">{{ $akt->angkatan }}</option>
+                            @endforeach
+                        </select>
                     </div>
-                </form>
-            </div>
-            <!-- END FORM FILTER -->
+                    <div class="col-xl-1">
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-filter"></i> </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- END FORM FILTER -->
     </div>
 
     <br><br>
@@ -111,26 +112,32 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $i ?>
-                        @for($i = 0; $i<=(count($mahasiswa)-1); $i++)
-                        <tr>
-                            <td>{{$mahasiswa[$i]->nama_mhs}}</td>
-                            <td>{{$mahasiswa[$i]->nim}}</td>
-                            <td>
-                                {{$mahasiswa[$i]->persentase_skripsi}} %
-                            </td>
-                            <td>{{$mahasiswa[$i]->keterangan}}</td>
-                            <td>
-                                <center>
-                                <a href="/dosen/detailMahasiswaBimbingan/{{$mahasiswa[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-eye"></i>&nbsp;Lihat</button></a>
-                                </center>
-                            </td>
-                            <td>
-                                <center>
-                                <a href="/dosen/lembar_kendali/{{$mahasiswa[$i]->nim}}"><button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer-fill"></i>&nbsp;Cetak</button></a>
-                                </center>
-                            </td>
-                        </tr>
+                        <?php $i; ?>
+                        @for ($i = 0; $i <= count($mahasiswa) - 1; $i++)
+                            <tr>
+                                <td>{{ $mahasiswa[$i]->nama_mhs }}</td>
+                                <td>{{ $mahasiswa[$i]->nim }}</td>
+                                <td>
+                                    {{ $mahasiswa[$i]->persentase_skripsi }} %
+                                </td>
+                                <td>{{ $mahasiswa[$i]->keterangan }}</td>
+                                <td>
+                                    <center>
+                                        <a href="/dosen/detailMahasiswaBimbingan/{{ $mahasiswa[$i]->nim }}"><button
+                                                type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i
+                                                    class="bi bi-eye"></i>&nbsp;Lihat</button></a>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <a href="/dosen/lembar_kendali/{{ $mahasiswa[$i]->nim }}"><button type="button"
+                                                class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i
+                                                    class="bi bi-printer-fill"></i>&nbsp;Cetak</button></a>
+                                    </center>
+                                </td>
+                            </tr>
                         @endfor
                     </tbody>
                 </table>

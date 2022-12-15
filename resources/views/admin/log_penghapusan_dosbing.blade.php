@@ -4,25 +4,25 @@
     <title>Admin - Riwayat Pengeditan Dosbing</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,13 +46,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -113,30 +113,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item active">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -147,19 +147,19 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
 @section('content')
@@ -173,7 +173,7 @@
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('log_aktivitas')}}">Riwayat Aktivitas</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('log_aktivitas') }}">Riwayat Aktivitas</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Penghapusan Dosbing</li>
                         </ol>
                     </nav>
@@ -183,15 +183,16 @@
 
         <!-- FORM UNTUK CARI RIWAYAT -->
         <div class="row">
-            <form action="{{route('cariLogHapusDosbing')}}">
+            <form action="{{ route('cariLogHapusDosbing') }}">
                 @csrf
                 <table class="table">
                     <tr>
                         <td>
-                            <input type="text" class="form-control" name="keyword" placeholder="Cari Riwayat Penghapusan...">
+                            <input type="text" class="form-control" name="keyword"
+                                placeholder="Cari Riwayat Penghapusan...">
                         </td>
                         <td>
-                            <button class="btn btn-primary" type = "submit"><i class="b bi-search"></i> </button>
+                            <button class="btn btn-primary" type="submit"><i class="b bi-search"></i> </button>
                         </td>
                     </tr>
                 </table>
@@ -203,7 +204,7 @@
             <div class="row match-height">
                 <div class="card card-outline-secondary">
                     <div class="row align-items-center m-5">
-                        <div class="col-xl-12 mb-6">    
+                        <div class="col-xl-12 mb-6">
                             <!-- DAFTAR RIWAYAT  PENGHAPUSAN DOSBING -->
                             <div class="table-responsive">
                                 <table class="table table-bordered mb-0 text-justify">
@@ -218,37 +219,39 @@
                                     </thead>
                                     <tbody class="text-justify">
                                         <?php $i = 1; ?>
-                                        @foreach($logs as $log)
-                                        <tr>
-                                            <td>{{$i}}</td>
-                                            <td class="text-bold-500">{{$log->id_admin}}</td>
-                                            <td>{{$log->nama_admin}}</td>
-                                            <td>
-                                                Admin {{$log->nama_admin}} menhapus dosen pembimbing untuk mahasiswa dengan nama
-                                                <b>{{$log->nama}}</b>, NIM <b>{{$log->nim}}</b>, 
-                                                dimana NIP dosbing yang tersimpan sebagai berikut. <br>
-                                                NIP Dosbing 1 : {{$log->nip_dosbing1}} <br>
-                                                NIP Dosbing 2 : {{$log->nip_dosbing2}} <br>
-                                            </td>
-                                            <td>
-                                                {!! date('d, M Y', strtotime($log->created_at)) !!}
-                                            </td>
-                                        </tr>
-                                        <?php $i++; ?>
+                                        @foreach ($logs as $log)
+                                            <tr>
+                                                <td>{{ $i }}</td>
+                                                <td class="text-bold-500">{{ $log->id_admin }}</td>
+                                                <td>{{ $log->nama_admin }}</td>
+                                                <td>
+                                                    Admin {{ $log->nama_admin }} menhapus dosen pembimbing untuk mahasiswa
+                                                    dengan nama
+                                                    <b>{{ $log->nama }}</b>, NIM <b>{{ $log->nim }}</b>,
+                                                    dimana NIP dosbing yang tersimpan sebagai berikut. <br>
+                                                    NIP Dosbing 1 : {{ $log->nip_dosbing1 }} <br>
+                                                    NIP Dosbing 2 : {{ $log->nip_dosbing2 }} <br>
+                                                </td>
+                                                <td>
+                                                    {!! date('d, M Y', strtotime($log->created_at)) !!}
+                                                </td>
+                                            </tr>
+                                            <?php $i++; ?>
                                         @endforeach
                                     </tbody>
                                 </table><br>
-                                
+
                                 <br><br>
                             </div>
                             <div class="d-felx justify-content-center">
-                                <a href="{{route('log_penghapusan_dosbing')}}" class="btn btn-primary btn-sm"><i class="fa fa-arrow-left"></i>&nbsp;&nbsp;Kembali</a>
-                            </div>                            
+                                <a href="{{ route('log_penghapusan_dosbing') }}" class="btn btn-primary btn-sm"><i
+                                        class="fa fa-arrow-left"></i>&nbsp;&nbsp;Kembali</a>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>    
+    </div>
 @endsection

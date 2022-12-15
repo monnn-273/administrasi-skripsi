@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2022 at 03:22 PM
+-- Generation Time: Jun 29, 2022 at 09:10 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -872,7 +872,13 @@ INSERT INTO `log_pendaftaran_skripsis` (`id`, `id_user`, `nama_pendaftar`, `nim`
 (19, 21, 'Ariana Grande', '181402007', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Berbasis Web Dinamis', 'admin', '2022-06-14 00:49:56', '2022-06-14 00:49:56'),
 (20, 21, 'Ariana Grande', '181402007', 'Perancangan Sistem Informasi Manajemen Rumah Sakit', 'admin', '2022-06-17 12:48:42', '2022-06-17 12:48:42'),
 (21, 4, 'Rael Kertia', '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'mahasiswa', '2022-06-18 14:07:01', '2022-06-18 14:07:01'),
-(22, 21, 'Ariana Grande', '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'admin', '2022-06-18 14:20:13', '2022-06-18 14:20:13');
+(22, 21, 'Ariana Grande', '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'admin', '2022-06-18 14:20:13', '2022-06-18 14:20:13'),
+(23, 1, 'Annelis Mellema', '181402001', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Umum Jonggol', 'mahasiswa', '2022-06-29 04:19:17', '2022-06-29 04:19:17'),
+(24, 21, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Klinik Light House', 'admin', '2022-06-29 06:33:26', '2022-06-29 06:33:26'),
+(25, 21, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Klinik Light House', 'admin', '2022-06-29 06:33:50', '2022-06-29 06:33:50'),
+(26, 33, 'Anneliese Mitchel', '181402002', 'Perancangan Sistem Informasi Manajemen Z Library Berbasis Web', 'mahasiswa', '2022-06-29 06:41:39', '2022-06-29 06:41:39'),
+(27, 33, 'Anneliese Mitchel', '181402002', 'Perancangan Sistem Informasi Manajemen Z Library', 'mahasiswa', '2022-06-29 06:59:05', '2022-06-29 06:59:05'),
+(28, 33, 'Anneliese Mitchel', '181402002', 'Perancangan Sistem Informasi Manajemen Z Library', 'mahasiswa', '2022-06-29 06:59:39', '2022-06-29 06:59:39');
 
 --
 -- Triggers `log_pendaftaran_skripsis`
@@ -955,7 +961,10 @@ INSERT INTO `log_penghapusan_skripsis` (`id`, `id_admin`, `nama_admin`, `nim`, `
 (6, 1, 'Ariana Grande', '181402007', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Berbasis Mobile', 'Pemrograman Mobile', '2022-06-14 00:30:11', '2022-06-14 00:30:11'),
 (7, 1, 'Ariana Grande', '181402007', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Berbasis Web Dinamis', 'Pemrograman Web', '2022-06-14 00:52:17', '2022-06-14 00:52:17'),
 (8, 1, 'Ariana Grande', '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Animasi', '2022-06-18 14:11:27', '2022-06-18 14:11:27'),
-(9, 1, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Umum Sidikalang', 'Pemrograman web', '2022-06-18 14:21:17', '2022-06-18 14:21:17');
+(9, 1, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Umum Sidikalang', 'Pemrograman web', '2022-06-18 14:21:17', '2022-06-18 14:21:17'),
+(10, 1, 'Ariana Grande', '181402001', 'Analisis Pengunaan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Pemrograman Web', '2022-06-29 04:18:48', '2022-06-29 04:18:48'),
+(11, 1, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Klinik Light House', 'Analisis dan Desain Sistem', '2022-06-29 06:34:51', '2022-06-29 06:34:51'),
+(12, 1, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Z Library Berbasis Web', 'Animasi', '2022-06-29 06:58:31', '2022-06-29 06:58:31');
 
 --
 -- Triggers `log_penghapusan_skripsis`
@@ -1032,7 +1041,13 @@ CREATE TABLE `log_pengubahan_skripsis` (
 INSERT INTO `log_pengubahan_skripsis` (`id`, `id_user`, `nama_pengubah`, `nim`, `old_judul_skripsi`, `new_judul_skripsi`, `old_bidang_ilmu`, `new_bidang_ilmu`, `edited_by`, `created_at`, `updated_at`) VALUES
 (2, 21, 'Ariana Grande', '161402002', 'Rancang Bangun Game 2d Shooter Pltformer Menggunakan Metode Finite State Machine', 'Rancang Bangun Game 2d Shooter Platformer Menggunakan Metode Finite State Machine', 'Analisis dan desain sistem', 'Analisis dan desain sistem', 'admin', '2022-05-30 16:29:17', '2022-05-30 16:29:17'),
 (3, 21, 'Ariana Grande', '181402004', 'Sistem Penunjang Keputusan Pencarian Jarak Terpendek Menuju Rumah Sakit Dan Puskesmas Dengan Metode Dijkstra', 'Sistem Penunjang Keputusan Pencarian Jarak Terpendek Menuju Rumah Sakit Dan Puskesmas Dengan Metode Dijkstra', 'Teori Graf dan Aplikasi', 'Teori Graph dan Aplikasi', 'admin', '2022-06-02 16:36:39', '2022-06-02 16:36:39'),
-(4, 21, 'Ariana Grande', '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Analisis dan Desain Sistem', 'Analisis dan Desain Sistem', 'admin', '2022-06-18 14:21:04', '2022-06-18 14:21:04');
+(4, 21, 'Ariana Grande', '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Analisis dan Desain Sistem', 'Analisis dan Desain Sistem', 'admin', '2022-06-18 14:21:04', '2022-06-18 14:21:04'),
+(5, 1, 'Annelis Mellema', '181402001', 'Analisis Perbandingan Framework Codeigniter Dan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Analisis Penggunaan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Pemrograman Web', 'Pemrograman Web', 'mahasiswa', '2022-06-29 04:14:32', '2022-06-29 04:14:32'),
+(6, 1, 'Annelis Mellema', '181402001', 'Analisis Perbandingan Framework Codeigniter Dan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Analisis Penggunaan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Pemrograman Web', 'Pemrograman Web', 'mahasiswa', '2022-06-29 04:17:15', '2022-06-29 04:17:15'),
+(7, 1, 'Annelis Mellema', '181402001', 'Analisis Perbandingan Framework Codeigniter Dan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Analisis Pengunaan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Pemrograman Web', 'Pemrograman Web', 'mahasiswa', '2022-06-29 04:17:52', '2022-06-29 04:17:52'),
+(8, 1, 'Annelis Mellema', '181402001', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Umum Jonggol', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Umum Jonggola', 'Analisis dan Desain Sistem', 'Analisis dan Desain Sistem', 'mahasiswa', '2022-06-29 04:19:34', '2022-06-29 04:19:34'),
+(9, 21, 'Ariana Grande', '181402002', 'Perancangan Sistem Informasi Manajemen Klinik Light House', 'Perancangan Sistem Informasi Manajemen Klinik Light House', 'Analisis dan Desain Sistem', 'Analisis dan Desain Sistem', 'admin', '2022-06-29 06:34:38', '2022-06-29 06:34:38'),
+(10, 33, 'Anneliese Mitchel', '181402002', 'Eng Perancangan Sistem Informasi Manajemen Z Library Berbasis Web', 'Perancangan Sistem Informasi Manajemen Z Library Berbasis Web', 'Animasi', 'Animasi', 'mahasiswa', '2022-06-29 06:58:18', '2022-06-29 06:58:18');
 
 --
 -- Triggers `log_pengubahan_skripsis`
@@ -1317,6 +1332,7 @@ CREATE TABLE `skripsis` (
   `id` int(9) UNSIGNED NOT NULL,
   `nim` varchar(9) COLLATE utf8mb4_unicode_ci NOT NULL,
   `judul_skripsi` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `eng_judul_skripsi` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `bidang_ilmu` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
@@ -1326,18 +1342,19 @@ CREATE TABLE `skripsis` (
 -- Dumping data for table `skripsis`
 --
 
-INSERT INTO `skripsis` (`id`, `nim`, `judul_skripsi`, `bidang_ilmu`, `created_at`, `updated_at`) VALUES
-(6, '171402003', 'Analisa Perancangan Sistem Pendukung Keputusan Admisi Siswa Baru Menggunakan Analytical Hierarcy Pro', 'Analisis dan Desain Sistem', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
-(7, '171402004', 'Perancangan Animasi 3 Dimensi Alur Pengurusan Administrasi Pasien Umum dan Jaminan di Bagian Rehabil', 'Animasi', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
-(8, '171402005', 'Pemanfaatan Virtual Tour Sebagai Interaksi Manusia dan Komputer', 'Interaksi Manusia dan Komputer', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
-(9, '171402006', 'Rancang Bangun Aplikasi Bimbingan Dosen Wali Secara Online', 'Pemrograman', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
-(13, '171402001', 'Pengembangan Bahan Ajar Pengantar Teknologi Informasi Berbasis Contextual Teaching and Learning', 'Pengantar Teknologi Informasi', '2022-06-01 17:00:00', '2022-06-18 14:23:41'),
-(14, '171402002', 'Rancang Bangun Game 2d Shooter Pltformer Menggunakan Metode Finite State Machine', 'Analisis dan Desain Sistem', '2022-06-01 17:00:00', '2022-06-01 17:00:00'),
-(15, '181402004', 'Sistem Penunjang Keputusan Pencarian Jarak Terpendek Menuju Rumah Sakit Dan Puskesmas', 'Teori Graph dan Aplikasi', '2022-06-01 19:37:44', '2022-06-02 16:36:39'),
-(18, '181402009', 'Sistem Pendukung Keputusan Penilaian Kesehatan Tanah Dengan Metode Simple Additive Weighting', 'Pemrograman Web', '2022-06-02 16:39:51', '2022-06-02 16:39:51'),
-(22, '181402001', 'Analisis Perbandingan Framework Codeigniter Dan Framework Laravel (Studi Kasus Inventaris Hmj Ti Stmik Akakom Yogyakarta)', 'Pemrograman Web', '2022-06-07 15:38:39', '2022-06-07 15:38:39'),
-(24, '181402007', 'Perancangan Sistem Informasi Manajemen Rumah Sakit', 'Pemrograman Web', '2022-06-17 12:48:42', '2022-06-17 12:48:42'),
-(26, '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Analisis dan Desain Sistem', '2022-06-18 14:20:13', '2022-06-18 14:21:04');
+INSERT INTO `skripsis` (`id`, `nim`, `judul_skripsi`, `eng_judul_skripsi`, `bidang_ilmu`, `created_at`, `updated_at`) VALUES
+(6, '171402003', 'Analisa Perancangan Sistem Pendukung Keputusan Admisi Siswa Baru Menggunakan Analytical Hierarcy Pro', 'Judul Bahasa Inggris 1', 'Analisis dan Desain Sistem', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
+(7, '171402004', 'Perancangan Animasi 3 Dimensi Alur Pengurusan Administrasi Pasien Umum dan Jaminan di Bagian Rehabil', 'Judul Bahasa Inggris 2', 'Animasi', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
+(8, '171402005', 'Pemanfaatan Virtual Tour Sebagai Interaksi Manusia dan Komputer', 'Judul Bahasa Inggris 3', 'Interaksi Manusia dan Komputer', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
+(9, '171402006', 'Rancang Bangun Aplikasi Bimbingan Dosen Wali Secara Online', 'Judul Bahasa Inggris 4', 'Pemrograman', '2022-05-23 17:00:00', '2022-05-23 17:00:00'),
+(13, '171402001', 'Pengembangan Bahan Ajar Pengantar Teknologi Informasi Berbasis Contextual Teaching and Learning', 'Judul Bahasa Inggris 5', 'Pengantar Teknologi Informasi', '2022-06-01 17:00:00', '2022-06-18 14:23:41'),
+(14, '171402002', 'Rancang Bangun Game 2d Shooter Pltformer Menggunakan Metode Finite State Machine', 'Judul Bahasa Inggris 6', 'Analisis dan Desain Sistem', '2022-06-01 17:00:00', '2022-06-01 17:00:00'),
+(15, '181402004', 'Sistem Penunjang Keputusan Pencarian Jarak Terpendek Menuju Rumah Sakit Dan Puskesmas', 'Judul Bahasa Inggris 7', 'Teori Graph dan Aplikasi', '2022-06-01 19:37:44', '2022-06-02 16:36:39'),
+(18, '181402009', 'Sistem Pendukung Keputusan Penilaian Kesehatan Tanah Dengan Metode Simple Additive Weighting', 'Judul Bahasa Inggris 8', 'Pemrograman Web', '2022-06-02 16:39:51', '2022-06-02 16:39:51'),
+(24, '181402007', 'Perancangan Sistem Informasi Manajemen Rumah Sakit', 'Judul Bahasa Inggris 9', 'Pemrograman Web', '2022-06-17 12:48:42', '2022-06-17 12:48:42'),
+(26, '181402005', 'Perancangan Sistem Informasi Manajemen Klinik Light House Berbasis Web', 'Judul Bahasa Inggris 10', 'Analisis dan Desain Sistem', '2022-06-18 14:20:13', '2022-06-18 14:21:04'),
+(27, '181402001', 'Perancangan Sistem Informasi Manajemen Rumah Sakit Umum Jonggola', 'Judul Bahasa Inggris 11', 'Analisis dan Desain Sistem', '2022-06-29 04:19:18', '2022-06-29 04:19:34'),
+(30, '181402002', 'Perancangan Sistem Informasi Manajemen Z Library', 'Eng Perancangan Sistem Informasi Manajemen Z Library', 'Analisis dan Desain Sistem', '2022-06-29 06:59:39', '2022-06-29 06:59:52');
 
 --
 -- Triggers `skripsis`
@@ -1420,7 +1437,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `status`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Annelis Mellema', 'annelis@gmail.com', 'mahasiswa', NULL, '$2y$10$imVIR.XI8iNJ0x2m1tPYt.oHGVa.K5mjNAbwn0v/dX5MzxNu4rZN.', 'wqPwPpPn2VgEg5N7auziANo2enkWsyYZrq8HWe9vxmnCGHflVYqnTXKgOWr1', '2022-05-24 03:02:06', '2022-05-24 03:02:06'),
+(1, 'Annelis Mellema', 'annelis@gmail.com', 'mahasiswa', NULL, '$2y$10$imVIR.XI8iNJ0x2usersm1tPYt.oHGVa.K5mjNAbwn0v/dX5MzxNu4rZN.', 'IcRZIJnFJu2cE4vAUrdGDmWmQc9X40gSRbeyPkgw6uNxNeIqReNNUhw964W8', '2022-05-24 03:02:06', '2022-05-24 03:02:06'),
 (2, 'Regis Landegre', 'regis@gmail.com', 'mahasiswa', NULL, '$2y$10$38.mMDp.avH0rJKv3jGZ/Or9DAWPmcyh858thfnDcqmVy0.uIfH0m', NULL, '2022-05-24 03:14:50', '2022-05-24 03:14:50'),
 (3, 'Seira Loyard', 'seira@gmail.com', 'mahasiswa', NULL, '$2y$10$7UzWSq9U/FazkdaVzC7MzeIAOluLkB7zczJrN9hM2N59lfpQm.F6G', NULL, '2022-05-24 03:16:27', '2022-05-24 03:16:27'),
 (4, 'Rael Kertia', 'rael@gmail.com', 'mahasiswa', NULL, '$2y$10$whxxrnbTIZqsqMFQyJPpN.X6.3D8d549mykgErjlbFrZD7dizJLFK', NULL, '2022-05-24 03:18:43', '2022-05-24 03:18:43'),
@@ -1958,6 +1975,8 @@ ALTER TABLE `personal_access_tokens`
 --
 ALTER TABLE `skripsis`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `eng_judul_skripsi` (`eng_judul_skripsi`),
+  ADD UNIQUE KEY `judul_skripsi` (`judul_skripsi`),
   ADD KEY `skripsis_nim_foreign` (`nim`);
 
 --
@@ -2007,7 +2026,7 @@ ALTER TABLE `log_penambahan_dosbings`
 -- AUTO_INCREMENT for table `log_pendaftaran_skripsis`
 --
 ALTER TABLE `log_pendaftaran_skripsis`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `log_penghapusan_dosbings`
@@ -2019,7 +2038,7 @@ ALTER TABLE `log_penghapusan_dosbings`
 -- AUTO_INCREMENT for table `log_penghapusan_skripsis`
 --
 ALTER TABLE `log_penghapusan_skripsis`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `log_pengubahan_dosbings`
@@ -2031,7 +2050,7 @@ ALTER TABLE `log_pengubahan_dosbings`
 -- AUTO_INCREMENT for table `log_pengubahan_skripsis`
 --
 ALTER TABLE `log_pengubahan_skripsis`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -2049,7 +2068,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `skripsis`
 --
 ALTER TABLE `skripsis`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `status_akses`

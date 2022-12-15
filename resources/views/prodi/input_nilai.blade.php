@@ -4,10 +4,10 @@
     <title>Prodi - Input Nilai</title>
 @endsection
 
-@section('sidebar')              
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/prodi/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
@@ -29,14 +29,14 @@
 
     <li class="sidebar-item ">
         <a href="/prodi/beritaacara" class='sidebar-link'>
-            <i class="bi bi-journal-plus"></i>
+
             <span>Berita Acara</span>
         </a>
     </li>
-                            
+
     <li class="sidebar-item  ">
         <a href="/prodi/undangan_daftar_peserta" class='sidebar-link'>
-            <i class="bi bi-journal-plus"></i>
+
             <span>Undangan dan Daftar Peserta</span>
         </a>
     </li>
@@ -47,23 +47,23 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>                      
+    </li>
 @endsection
 
 
-@section('content')   
+@section('content')
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
@@ -89,8 +89,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Input Nilai IPK</h4>
-                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p> <hr>
-                                <a href="{{route('nilai_IPK')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p>
+                                <hr>
+                                <a href="{{ route('nilai_IPK') }}" class="btn btn-primary"><i class="bi bi-hand-index"></i>
+                                    Access</a>
                             </div>
                         </div>
                     </div>
@@ -103,8 +105,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Input Nilai Uji Program</h4>
-                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p> <hr>
-                                <a href="{{route('nilai_uji_program')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i>Access</a>
+                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p>
+                                <hr>
+                                <a href="{{ route('nilai_uji_program') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i>Access</a>
                             </div>
                         </div>
                     </div>
@@ -117,8 +121,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Input Nilai Seminar Hasil</h4>
-                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p> <hr>
-                                <a href="{{route('nilai_semhas')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i>Access</a>
+                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p>
+                                <hr>
+                                <a href="{{ route('nilai_semhas') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i>Access</a>
                             </div>
                         </div>
                     </div>
@@ -131,8 +137,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Input Nilai Sidang Meja Hijau</h4>
-                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p> <hr>
-                                <a href="{{route('nilai_sidang')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i>Access</a>
+                                <p>Daftar Mahasiswa Aktif, Judul Skripsi, dan Dosen Pembimbing </p>
+                                <hr>
+                                <a href="{{ route('nilai_sidang') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i>Access</a>
                             </div>
                         </div>
                     </div>
