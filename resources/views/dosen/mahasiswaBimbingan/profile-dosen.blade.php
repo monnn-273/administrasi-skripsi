@@ -22,7 +22,7 @@
     <li class="sidebar-item has-sub ">
         <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
-            <span>Mahasiswa TA</span>
+            <span>Mahasiswa</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
@@ -123,13 +123,13 @@
                                             </div>
                                         </div>
                                         <!-- <li>
-                                            <div class="icon dripicons-cloud-download"></div>
-                                            <input type="text" readonly="readonly" value="cloud-download">
-                                        </li>
-                                        <li>
-                                            <div class="icon dripicons-download"></div>
-                                            <input type="text" readonly="readonly" value="download">
-                                        </li> -->
+                                                <div class="icon dripicons-cloud-download"></div>
+                                                <input type="text" readonly="readonly" value="cloud-download">
+                                            </li>
+                                            <li>
+                                                <div class="icon dripicons-download"></div>
+                                                <input type="text" readonly="readonly" value="download">
+                                            </li> -->
                                     </div>
                                 </form>
 
@@ -139,8 +139,8 @@
                                     width="150" height="250">
                             </div>
                             <!-- <div class="d-grid gap-2 d-md-flex justify-content-between">
-                                <a href="#"><button class="btn btn-primary btn-sm"><i class="bi bi-save"></i>&nbsp;&nbsp;&nbsp;Save</button></a>
-                            </div> -->
+                                    <a href="#"><button class="btn btn-primary btn-sm"><i class="bi bi-save"></i>&nbsp;&nbsp;&nbsp;Save</button></a>
+                                </div> -->
                         </div>
                     </div>
                 </div>

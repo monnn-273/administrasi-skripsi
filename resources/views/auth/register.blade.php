@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-    	<title>Administrasi Skripsi - Register</title>
+    	<title>Administrasi Tugas Akhir - Register</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-center mb-5">
                         <h2 class="heading-section">Selamat datang!</h2>
-                        <p>Aplikasi ini dikembangkan untuk memanajemen proses administrasi skripsi mahasiswa/i program studi Teknologi Infomrasi Universitas Sumatera Utara. </p>
+                        <p>Aplikasi ini dikembangkan untuk memanajemen proses Administrasi Tugas Akhir mahasiswa/i program studi Teknologi Infomrasi Universitas Sumatera Utara. </p>
                     </div>
                 </div>
                 <!-- END TITLE SECTION -->

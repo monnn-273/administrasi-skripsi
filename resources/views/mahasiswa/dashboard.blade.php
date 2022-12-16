@@ -85,9 +85,9 @@
                                     alt="default_student_image" style="height: 200px; width:200px" />
                             </center>
                         @endif
-                        <div class="card-body">
-                            <h4 class="card-title text-center">{{ $profile->nama }}</h4>
-                            <p class="card-text"><br>
+                        <div class="card-body mt-1">
+                            <h4 class="card-title text-center mt-1">{{ $profile->nama }}</h4>
+                            <p class="card-text mt-1">
                                 {{-- <div class="progress progress-primary  mb-2">
                                 <div class="progress-bar progress-label" role="progressbar"
                                     style="width: {{ $percent }}%" aria-valuenow="{{ $percent }}"

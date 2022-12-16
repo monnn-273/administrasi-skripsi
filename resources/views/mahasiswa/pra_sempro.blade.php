@@ -226,11 +226,10 @@
 
                         <div class="card-body">
                             <!-- progress seminar proposal akan didapatkan melalui fitur ini -->
-                            <h5>3. Formulir Pengajuan Judul </h5>
-                            <p> Formulir ini Anda butuhkan sebelum seminar proposal untuk untuk mengajukan judul yang
-                                disetujui
-                                dan ringkasan skripsi. Silahkan cetak formulir ini atau preview untuk memastikan
-                                data Anda sudah benar sebelum mengunduh formulir. </p>
+                            <h5>3. Form Pengajuan Judul </h5>
+                            <p> Form ini merupakan form pengajuan judul yang akan diajukan oleh mahasiswa untuk dilakukan
+                                uji kelayakan judul.</p>
+                            {{-- alert pemberitahuan --}}
 
                             <form action="{{ route('daftar_judul') }}" method="GET">
                                 @csrf
@@ -271,11 +270,9 @@
 
                             <hr><br>
 
-                            <h5>4. Edit Judul Skripsi</h5>
-                            <p> Bagi mahasiswa yang judul skripsinya sudah di-<i>acc</i> oleh dosen pembimbing, silakan
-                                menginput judul skripsi pada bagian ini.
-                                Kesesuaian judul yang diinput akan menjadi tanggung jawab mahasiswa. Harap menginput data
-                                sebenar-benarnya.
+                            <h5>4. Perbaikan Judul</h5>
+                            <p> Mahasiswa yang telah disetujui oleh dosen pembimbing untuk mengajukan judul skripsi
+                                dapat melakukan perbaikan judul skripsi. </p>
                             </p>
                             {{-- alert status berhasil perbaiki --}}
                             @if (session('success_edit_judul'))
@@ -304,7 +301,7 @@
                                             <input type="hidden" name="nim" value="{{ $mhs->nim }}">
                                             @csrf
                                             <button type="submit" class="btn btn-success btn-sm">
-                                                <i class="bi bi-pencil-square"></i> Perbaiki judul skripsi </button>
+                                                <i class="bi bi-pencil-square"></i> Edit Judul </button>
                                         </form>
                                     </div>
                                 @else

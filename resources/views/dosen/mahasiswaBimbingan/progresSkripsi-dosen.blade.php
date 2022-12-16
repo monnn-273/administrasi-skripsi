@@ -13,12 +13,12 @@
     </li>
 
     <!-- <li
-            class="sidebar-item  ">
-            <a href="profile" class='sidebar-link'>
-                
-                <span>Profile</span>
-            </a>
-        </li> -->
+                class="sidebar-item  ">
+                <a href="profile" class='sidebar-link'>
+                    
+                    <span>Profile</span>
+                </a>
+            </li> -->
 
     <li class="sidebar-item  ">
         <a href="bimbinganSkripsi" class='sidebar-link'>
@@ -63,7 +63,7 @@
     <li class="sidebar-item  ">
         <a href="bimbinganSkripsi" class='sidebar-link'>
             <i class="bi bi-journal-bookmark-fill"></i>
-            <span>Mahasiswa TA</span>
+            <span>Mahasiswa</span>
         </a>
     </li>
 

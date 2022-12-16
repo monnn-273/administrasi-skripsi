@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Administrasi Skripsi</title>
+    <title>Administrasi Tugas Akhir</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
@@ -17,15 +17,19 @@
             <!--TITLE  -->
             <div class="row justify-content-start">
                 <div class="col-md-6 mb-5">
-                    <h1 class="heading-section" style="font-family: Barlow, sans-serif; font-weight:bolder">Thesis
+                    {{-- <h1 class="heading-section" style="font-family: Barlow, sans-serif; font-weight:bolder">Thesis
                         Administration
                         System
-                    </h1>
-                    <h2 class="heading-section" style="font-family: Barlow, sans-serif; font-weight:bolder">
-                        Sistem Administrasi Skripsi</h2>
-                    <p style="color: black">Halaman login ini diperuntukkan bagi dosen / mahasiswa dalam proses
-                        administrasi skripsi mahasiswa/i program studi S-1 Teknologi Informasi Universitas Sumatera
-                        Utara. </p>
+                    </h1> --}}
+                    <br><br>
+                    <h1 class="heading-section" style="font-family: Barlow, sans-serif; font-weight:bolder">
+                        Sistem Administrasi Tugas Akhir</h1>
+                    <p style="color: black">Selamat Datang <br>
+                        Halaman login ini diperuntukkan bagi : <br>
+                        1. Mahasiswa Teknologi Informasi <br>
+                        2. Dosen (Kepala Program Studi, Sekretaris Program Studi, Kepala Laboratorium, Dosen Pembimbing
+                        , Dosen Penguji) <br>
+                    </p>
                 </div>
                 <div class="col-md-8 col-lg-6">
                     <div class="wrap">

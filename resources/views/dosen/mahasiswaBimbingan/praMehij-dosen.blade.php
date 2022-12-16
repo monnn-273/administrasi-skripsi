@@ -13,17 +13,17 @@
     </li>
 
     <!-- <li
-            class="sidebar-item  ">
-            <a href="profile" class='sidebar-link'>
-                
-                <span>Profile</span>
-            </a>
-        </li> -->
+                class="sidebar-item  ">
+                <a href="profile" class='sidebar-link'>
+                    
+                    <span>Profile</span>
+                </a>
+            </li> -->
 
     <li class="sidebar-item has-sub ">
         <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
-            <span>Mahasiswa TA</span>
+            <span>Mahasiswa</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">

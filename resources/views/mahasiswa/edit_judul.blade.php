@@ -146,7 +146,7 @@
                                             <div class="col-md-8 form-group">
                                                 <select id="bid_ilmu"
                                                     class="form-control  @error('bid_ilmu') is-invalid @enderror"
-                                                    name="bid_ilmu" required autocomplete="bid_ilmu">
+                                                    name="bid_ilmu" required autocomplete="bid_ilmu" disabled>
                                                     <option value="{{ $mahasiswa->bidang_ilmu }}">
                                                         {{ $mahasiswa->bidang_ilmu }}</option>
                                                     @foreach ($bidang_ilmu as $bid)

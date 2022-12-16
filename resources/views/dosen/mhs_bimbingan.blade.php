@@ -1,30 +1,29 @@
-@extends('dosen/layout')
+@extends('dosen.layout')
 
 @section('title')
-    <title>Dosen - Jadwal Seminar/Sidang</title>
+    <title>Dosen - Mahasiswa Bimbingan</title>
 @endsection
 
 @section('sidebar')
-    <li class="sidebar-item active   ">
+    <li class="sidebar-item ">
         <a href="dashboard" class='sidebar-link'>
-
             <span>Dashboard</span>
         </a>
     </li>
 
-    <li class="sidebar-item has-sub ">
-        <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
+    <li class="sidebar-item active   ">
+        <a href="{{ route('mhs_bimbingan') }}" class='sidebar-link'>
             {{-- <i class="bi bi-people-fill"></i> --}}
-            <span>Mahasiswa</span>
+            <span>Mahasiswa Bimbingan</span>
         </a>
-        <ul class="submenu">
+        {{-- <ul class="submenu">
             <li class="submenu-item ">
                 <a href="{{ route('mhs_aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
                 <a href="{{ route('lulus') }}">Lulus / Alumni</a>
             </li>
-        </ul>
+        </ul> --}}
     </li>
     <li class="sidebar-item has-sub ">
         <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
@@ -75,49 +74,49 @@
         </form>
     </li>
 @endsection
-
 @section('content')
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Mahasiswa Tugas Akhir</h3>
-                    <p class="text-subtitle text-muted">Data mahasiswa tugas akhir</p>
-                </div>
-                <div class="col-12 col-md-6 order-md-2 order-first">
-                    <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/dosen/dashboard">Dashboard</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Mahasiswa</li>
-                        </ol>
-                    </nav>
+                    <h3>Mahasiswa Bimbingan</h3>
+                    <p class="text-subtitle text-muted">Berikut merupakan daftar mahasiswa bimbingan Anda</p>
                 </div>
             </div>
         </div>
     </div>
+    <section class="section">
+        <div class="card">
+            <div class="card-body">
+                <table class="table" id="table1">
+                    <thead class="text-center">
+                        <tr>
+                            <th> No</th>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Keterangan</th>
+                            <th>Rincian Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{-- tampilkan data mahasiswa --}}
+                        @for ($i = 0; $i <= count($mahasiswa) - 1; $i++)
+                            <tr class="text-center">
+                                <td>{{ $i + 1 }}.</td>
+                                <td>{{ $mahasiswa[$i]->nim }}</td>
+                                <td>{{ $mahasiswa[$i]->nama_mhs }}</td>
+                                <td>{{ $mahasiswa[$i]->keterangan }}</td>
+                                <td>
+                                    <a href="/dosen/detailMahasiswaBimbingan/{{ $mahasiswa[$i]->nim }}"><button
+                                            type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"><i class="bi bi-eye"></i>&nbsp;Lihat</button></a>
+                                </td>
+                            </tr>
+                        @endfor
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-                <img src="{{ asset('assets/images/praMeHij.jpeg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title" align="center">Mahasiswa Aktif</h3></br>
-                    <div class="d-grid gap-2 col-8 mx-auto">
-                        <a href="/dosen/mahasiswaBimbingan"><button class="btn btn-primary btn-block">Access</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="{{ asset('assets/images/pascaMeHij.jpeg') }}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title" align="center">Mahasiswa Lulus / Alumni</h3></br>
-                    <div class="d-grid gap-2 col-8 mx-auto">
-                        <a href="/dosen/mahasiswaLulus"><button class="btn btn-primary btn-block">Access</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 @endsection

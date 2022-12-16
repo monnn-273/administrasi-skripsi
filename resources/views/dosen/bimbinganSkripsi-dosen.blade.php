@@ -1,7 +1,7 @@
 @extends('dosen/layout')
 
 @section('title')
-    <title>Dosen - Mahasiswa TA</title>
+    <title>Dosen - Mahasiswa</title>
 @endsection
 
 @section('sidebar')
@@ -15,7 +15,7 @@
     <li class="sidebar-item has-sub ">
         <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
-            <span>Mahasiswa TA</span>
+            <span>Mahasiswa</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
@@ -50,13 +50,13 @@
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-6 order-md-1 order-last">
-                    <h3>Mahasiswa TA</h3>
+                    <h3>Mahasiswa</h3>
                     <p class="text-subtitle text-muted">Berbagai data yang diperlukan</p>
                 </div>
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="bimbinganSkripsi">Mahasiswa TA</a></li>
+                            <li class="breadcrumb-item"><a href="bimbinganSkripsi">Mahasiswa</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dosen</li>
                         </ol>
                     </nav>

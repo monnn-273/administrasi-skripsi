@@ -237,9 +237,17 @@ Route::get('admin/tes', [AdminController::class, 'tes'])->middleware('cekstatus:
 
 // ROUTES FOR DOSEN
 Route::get('/dosen/dashboard', [DosenController::class, 'index'])->middleware('cekstatus:dosen');
+Route::get('/dosen/mhs_bimbingan', [DosenController::class, 'mhs_bimbingan'])->middleware('cekstatus:dosen')->name('mhs_bimbingan');
 Route::get('/dosen/mahasiswaTA/', [DosenController::class, 'mahasiswaBimbingan'])->middleware('cekstatus:dosen')->name('mahasiswa_ta');
 Route::get('/dosen/mahasiswaBimbingan', [DosenController::class, 'mahasiswaTA'])->middleware('cekstatus:dosen')->name('mhs_aktif');
 Route::get('/dosen/mahasiswaLulus', [DosenController::class, 'mahasiswaLulus'])->middleware('cekstatus:dosen')->name('lulus');
+// bimbingan
+Route::get('/dosen/bimbingan_sempro', [DosenController::class, 'bimbingan_sempro'])->middleware('cekstatus:dosen')->name('bimbingan_sempro');
+Route::post('/dosen/simpan_bimbingan_sempro', [DosenController::class, 'simpan_bimbingan_sempro'])->middleware('cekstatus:dosen')->name('simpan_bimbingan_sempro');
+Route::get('/dosen/bimbingan_semhas', [DosenController::class, 'bimbingan_semhas'])->middleware('cekstatus:dosen')->name('bimbingan_semhas');
+Route::post('/dosen/simpan_bimbingan_semhas', [DosenController::class, 'simpan_bimbingan_semhas'])->middleware('cekstatus:dosen')->name('simpan_bimbingan_semhas');
+Route::get('/dosen/bimbingan_sidang', [DosenController::class, 'bimbingan_sidang'])->middleware('cekstatus:dosen')->name('bimbingan_sidang');
+Route::post('/dosen/simpan_bimbingan_sidang', [DosenController::class, 'simpan_bimbingan_sidang'])->middleware('cekstatus:dosen')->name('simpan_bimbingan_sidang');
 Route::get('/dosen/detailMahasiswaBimbingan/{nim}', [DosenController::class, 'detailMahasiswa'])->middleware('cekstatus:dosen');
 Route::get('/dosen/mahasiswaUji', [DosenController::class, 'mahasiswaUji'])->middleware('cekstatus:dosen');
 Route::get('/dosen/pascaMeHij', [DosenController::class, 'pascaMeHij'])->middleware('cekstatus:dosen');
@@ -252,7 +260,7 @@ Route::get('/dosen/semhas', [DosenController::class, 'semhas'])->middleware('cek
 Route::get('/dosen/sempro1', [DosenController::class, 'sempro1'])->middleware('cekstatus:dosen');
 Route::get('/dosen/semhas1', [DosenController::class, 'semhas1'])->middleware('cekstatus:dosen');
 Route::get('/dosen/jadwalSeminarSidang', [DosenController::class, 'jadwalSeminarSidang'])->middleware('cekstatus:dosen');
-Route::get('/dosen/mejaHijau', [DosenController::class, 'mejaHijau'])->middleware('cekstatus:dosen');
+Route::get('/dosen/sidang', [DosenController::class, 'mejaHijau'])->middleware('cekstatus:dosen');
 Route::get('/dosen/sidMejaHijau1', [DosenController::class, 'sidMejaHijau1'])->middleware('cekstatus:dosen');
 Route::get('/dosen/mejaHijau1', [DosenController::class, 'mejaHijau1'])->middleware('cekstatus:dosen');
 Route::get('/dosen/tampilMahasiswa/{nim}', [DosenController::class, 'berkasBeritaAcara'])->middleware('cekstatus:dosen');
@@ -270,6 +278,18 @@ Route::get('/dosen/lembar_kendali_sidang/{nim}', [DosenController::class, 'lemba
 Route::get('/dosen/search', [DosenController::class, 'search_mhs_lulus'])->middleware('cekstatus:dosen')->name('search_mhs');
 Route::get('/dosen/search_aktif', [DosenController::class, 'search_mhs_aktif'])->middleware('cekstatus:dosen')->name('search_mhs_aktif');
 Route::get('/dosen/filter', [DosenController::class, 'filter'])->middleware('cekstatus:dosen')->name('filter');
+
+// view dosbing input nilai
+Route::get('/dosen/v_nilai_uji_program', [DosenController::class, 'v_nilai_uji_program'])->middleware('cekstatus:dosen')->name('v_nilai_uji_program');
+Route::get('/dosen/v_nilai_semhas', [DosenController::class, 'v_nilai_semhas'])->middleware('cekstatus:dosen')->name('v_nilai_semhas');
+Route::get('/dosen/v_nilai_sidang', [DosenController::class, 'v_nilai_sidang'])->middleware('cekstatus:dosen')->name('v_nilai_sidang');
+
+// store dosbing input nilai
+Route::post('/dosen/store_nilai_uji_program', [DosenController::class, 'store_nilai_uji_program'])->middleware('cekstatus:dosen')->name('store_nilai_uji_program');
+Route::post('/dosen/store_nilai_semhas', [DosenController::class, 'store_nilai_semhas'])->middleware('cekstatus:dosen')->name('store_nilai_semhas');
+Route::post('/dosen/store_nilai_sidang', [DosenController::class, 'store_nilai_sidang'])->middleware('cekstatus:dosen')->name('store_nilai_sidang');
+
+
 // END ROUTES FOR DOSEN
 
 

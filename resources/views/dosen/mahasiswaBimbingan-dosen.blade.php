@@ -1,21 +1,21 @@
 @extends('dosen.layout')
 
 @section('title')
-    <title>Dosen - Mahasiswa TA</title>
+    <title>Dosen - Mahasiswa</title>
 @endsection
 
 @section('sidebar')
-    <li class="sidebar-item ">
+    <li class="sidebar-item   ">
         <a href="dashboard" class='sidebar-link'>
 
             <span>Dashboard</span>
         </a>
     </li>
 
-    <li class="sidebar-item has-sub active">
+    <li class="sidebar-item has-sub ">
         <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
-            <i class="bi bi-people-fill"></i>
-            <span>Mahasiswa TA</span>
+            {{-- <i class="bi bi-people-fill"></i> --}}
+            <span>Mahasiswa</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
@@ -26,12 +26,53 @@
             </li>
         </ul>
     </li>
+    <li class="sidebar-item has-sub active ">
+        <a href="{{ route('mahasiswa_ta') }}" class='sidebar-link'>
+            {{-- <i class="bi bi-people-fill"></i> --}}
+            <span>Bimbingan</span>
+        </a>
+        <ul class="submenu">
+            <li class="submenu-item ">
+                <a href="{{ route('bimbingan_sempro') }}">Pra Seminar Proposal</a>
+            </li>
+            <li class="submenu-item ">
+                <a href="{{ route('bimbingan_semhas') }}">Pra Seminar Hasil</a>
+            </li>
+            <li class="submenu-item ">
+                <a href="{{ route('bimbingan_sidang') }}">Pra Sidang Meja Hijau</a>
+            </li>
+        </ul>
+    </li>
+    <li class="sidebar-item has-sub ">
+        <a href="/jadwalSeminarSidang" class='sidebar-link'>
+            {{-- <i class="bi bi-people-fill"></i> --}}
+            <span>Jadwal</span>
+        </a>
+        <ul class="submenu">
+            <li class="submenu-item ">
+                <a href="/dosen/sempro">Seminar Proposal</a>
+            </li>
+            <li class="submenu-item ">
+                <a href="/dosen/semhas">Seminar Hasil</a>
+            </li>
+            <li class="submenu-item ">
+                <a href="/dosen/sidang">Sidang Meja Hijau</a>
+            </li>
+        </ul>
+    </li>
 
-    <li class="sidebar-item  ">
+    {{-- <li class="sidebar-item  ">
         <a href="jadwalSeminarSidang" class='sidebar-link'>
-            <i class="bi bi-calendar-date"></i>
             <span>Jadwal Seminar/Sidang</span>
         </a>
+    </li> --}}
+    <li class="sidebar-item  ">
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="sidebar-link">
+            @csrf
+            <button class="btn btn-primary" type="submit"> Logout
+                {{-- <span>Logout</span> --}}
+            </button>
+        </form>
     </li>
 @endsection
 
@@ -46,7 +87,7 @@
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="mahasiswaTA">Mahasiswa TA</a></li>
+                            <li class="breadcrumb-item"><a href="mahasiswaTA">Mahasiswa</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Dosen</li>
                         </ol>
                     </nav>
