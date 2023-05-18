@@ -1,33 +1,33 @@
-<?php use Carbon\Carbon ?>
+<?php use Carbon\Carbon; ?>
 @extends('admin/layout')
 
 @section('title')
     <title>Admin - Penjadwalan Seminar Hasil</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
-           
+
     <li class="sidebar-item has-sub">
         <a href="#" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
@@ -35,10 +35,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -47,13 +47,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -96,13 +96,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item active">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -114,30 +114,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -148,19 +148,19 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
 @section('content')
@@ -174,7 +174,7 @@
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('penjadwalan')}}">Penjadwalan</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('penjadwalan') }}">Penjadwalan</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Seminar Hasil</li>
                         </ol>
                     </nav>
@@ -186,7 +186,7 @@
             <div class="row match-height">
                 <div class="card card-outline-secondary">
                     <div class="row align-items-center m-5">
-                        <div class="col-xl-12 mb-6">    
+                        <div class="col-xl-12 mb-6">
                             <!-- DAFTAR ADMIN    -->
                             <h5>Jadwal Seminar Hasil Mahasiswa</h5></br>
                             <table>
@@ -197,15 +197,21 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <form method="post" action="{{route('cetakUndanganSemhas')}}">
+                                        <form method="post" action="{{ route('cetakUndanganSemhas') }}">
                                             @csrf
                                             <div class="row">
                                                 <div class="col-md-8">
-                                                    <select class="form-control  @error('tanggal_semhas') is-invalid @enderror" id="tanggal_semhas" name="tanggal_semhas" required value="{{ old('tanggal_semhas') }}" autocomplete="tanggal_semhas">
+                                                    <select
+                                                        class="form-control  @error('tanggal_semhas') is-invalid @enderror"
+                                                        id="tanggal_semhas" name="tanggal_semhas" required
+                                                        value="{{ old('tanggal_semhas') }}"
+                                                        autocomplete="tanggal_semhas">
                                                         <option value="">-- Pilih Jadwal Semhas --</option>
-                                                        <?php $i ?>
-                                                        @for($i=0; $i<=(count($query))-1; $i++)
-                                                            <option  value="{{$query[$i]->tanggal_semhas}}">{{Carbon::parse($query[$i]->tanggal_semhas)->translatedFormat('l / d F Y')}}</option>
+                                                        <?php $i; ?>
+                                                        @for ($i = 0; $i <= count($query) - 1; $i++)
+                                                            <option value="{{ $query[$i]->tanggal_semhas }}">
+                                                                {{ Carbon::parse($query[$i]->tanggal_semhas)->translatedFormat('l / d F Y') }}
+                                                            </option>
                                                         @endfor
                                                     </select>
                                                     @error('tanggal_semhas')
@@ -213,7 +219,8 @@
                                                     @enderror
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button type="submit" class="btn btn-primary btn-sm text-sm"><i class="bi bi-printer-fill"></i>&nbsp;&nbsp;Cetak</button>
+                                                    <button type="submit" class="btn btn-primary btn-sm text-sm"><i
+                                                            class="bi bi-printer-fill"></i>&nbsp;&nbsp;Cetak</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -221,16 +228,22 @@
                                     <td colspan="3">
                                         &nbsp; &nbsp;
                                     </td>
-                                    <td>    
-                                        <form method="post" action="{{route('cetakJadwalSemhas')}}">
+                                    <td>
+                                        <form method="post" action="{{ route('cetakJadwalSemhas') }}">
                                             @csrf
                                             <div class="row">
                                                 <div class="col-md-8">
-                                                    <select class="form-control  @error('tanggal_semhas') is-invalid @enderror" id="tanggal_semhas" name="tanggal_semhas" required value="{{ old('tanggal_semhas') }}" autocomplete="tanggal_semhas">
+                                                    <select
+                                                        class="form-control  @error('tanggal_semhas') is-invalid @enderror"
+                                                        id="tanggal_semhas" name="tanggal_semhas" required
+                                                        value="{{ old('tanggal_semhas') }}"
+                                                        autocomplete="tanggal_semhas">
                                                         <option value="">-- Pilih Jadwal Semhas --</option>
-                                                        <?php $j ?>
-                                                        @for($j=0; $j<=(count($query))-1; $j++)
-                                                            <option  value="{{$query[$j]->tanggal_semhas}}">{{Carbon::parse($query[$j]->tanggal_semhas)->translatedFormat('l / d F Y')}}</option>
+                                                        <?php $j; ?>
+                                                        @for ($j = 0; $j <= count($query) - 1; $j++)
+                                                            <option value="{{ $query[$j]->tanggal_semhas }}">
+                                                                {{ Carbon::parse($query[$j]->tanggal_semhas)->translatedFormat('l / d F Y') }}
+                                                            </option>
                                                         @endfor
                                                     </select>
                                                     @error('tanggal_semhas')
@@ -238,7 +251,8 @@
                                                     @enderror
                                                 </div>
                                                 <div class="col-md-4">
-                                                    <button type="submit" class="btn btn-primary btn-sm text-sm"><i class="bi bi-printer-fill"></i>&nbsp;&nbsp;Cetak</button>
+                                                    <button type="submit" class="btn btn-primary btn-sm text-sm"><i
+                                                            class="bi bi-printer-fill"></i>&nbsp;&nbsp;Cetak</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -247,15 +261,17 @@
                             </table>
                             <br>
                             <div class="table-responsive">
-                                @if(session('status'))
+                                @if (session('status'))
                                     <div class="alert alert-success alert-dismissible show fade">
-                                        <i class="bi bi-check-circle"></i> {{session('status')}}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <i class="bi bi-check-circle"></i> {{ session('status') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                            aria-label="Close"></button>
                                     </div>
                                 @elseif(session('prohibited'))
                                     <div class="alert alert-danger alert-dismissible show fade">
-                                        <i class="bi bi-exclamation-triangle"></i> {{session('prohibited')}}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <i class="bi bi-exclamation-triangle"></i> {{ session('prohibited') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                            aria-label="Close"></button>
                                     </div>
                                 @endif
                                 <table class="table table-bordered mb-0 ">
@@ -271,75 +287,90 @@
                                     </thead>
                                     <tbody>
                                         <?php $i = 1; ?>
-                                        @foreach($mahasiswas as $mahasiswa)
-                                        <tr>
-                                            <td>{{$i}}</td>
-                                            <td class="text-bold-500">{{$mahasiswa->nama}} - {{$mahasiswa->nim}}</td>
-                                            <td>
-                                                @if ($mahasiswa->tanggal_semhas == NULL)
-                                                    <p>Belum terdaftar.</p>
-                                                @else
-                                                    {{$mahasiswa -> tanggal_semhas}}
-                                                @endif
-                                            </td>
-                                            <td>
-                                                @if ($mahasiswa->tanggal_semhas == NULL)
-                                                    <p>Belum terdaftar.</p>
-                                                @else
-                                                    {{date('H.i', strtotime($mahasiswa -> waktu)) }} 
-                                                @endif
-                                            </td>
-                                            <td>
-                                                @if ($mahasiswa->tanggal_semhas == NULL)
-                                                    <p>Belum terdaftar.</p>
-                                                @else
-                                                    {{$mahasiswa -> tempat }} 
-                                                @endif
-                                            </td>
-                                            <td>
-                                                <center>
-                                                    <table>
-                                                        <tr>
-                                                            @if($mahasiswa->tanggal_semhas == NULL )
-                                                            <td>                                                       
-                                                                <form action="{{route('add_jd_semhas')}}">
-                                                                    @csrf
-                                                                    <input type= "hidden" name= "nim" value= "{{$mahasiswa->nim}}">
-                                                                    <input type="hidden" name="nama" value="{{$mahasiswa->nama}}">
-                                                                    <button type="submit" class="btn btn-success btn-sm"><i class="bi bi-plus-square"></i>&nbsp;&nbsp;Jadwalkan</button>
-                                                                </form>
-                                                            </td>
-                                                            @endif
-                                                            @if($mahasiswa->tanggal_semhas != NULL)
-                                                            <td>                                                       
-                                                                <form action="{{route('edit_jd_semhas')}}" method="POST">
-                                                                    @csrf
-                                                                    <input type="hidden" name="nama" value="{{$mahasiswa->nama}}">
-                                                                    <input type= "hidden" name= "nim" value= "{{$mahasiswa->nim}}">
-                                                                    <button type="submit" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i>&nbsp;&nbsp;</button>
-                                                                </form>
-                                                            </td>
-                                                            <td>
-                                                                <form action="{{route('delete_jd_semhas')}}" method="POST">
-                                                                    @csrf
-                                                                    <input type="hidden" name="nim" value="{{$mahasiswa->nim}}">
-                                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus jadwal ini? Anda tidak akan dapat mengembalikan data yang telah dihapus.')"><i class="bi bi-trash"></i>&nbsp;&nbsp;</button>
-                                                                </form>
-                                                            </td>
-                                                            @endif
-                                                        </tr>
-                                                    </table>
-                                                </center>   
-                                            </td>
-                                        </tr>
-                                        <?php $i++; ?>
+                                        @foreach ($mahasiswas as $mahasiswa)
+                                            <tr>
+                                                <td>{{ $i }}</td>
+                                                <td class="text-bold-500">{{ $mahasiswa->nama }} - {{ $mahasiswa->nim }}
+                                                </td>
+                                                <td>
+                                                    @if ($mahasiswa->tanggal_semhas == null)
+                                                        <p>Belum terdaftar.</p>
+                                                    @else
+                                                        {{ $mahasiswa->tanggal_semhas }}
+                                                    @endif
+                                                </td>
+                                                <td>
+                                                    @if ($mahasiswa->tanggal_semhas == null)
+                                                        <p>Belum terdaftar.</p>
+                                                    @else
+                                                        {{ date('H.i', strtotime($mahasiswa->waktu)) }}
+                                                    @endif
+                                                </td>
+                                                <td>
+                                                    @if ($mahasiswa->tanggal_semhas == null)
+                                                        <p>Belum terdaftar.</p>
+                                                    @else
+                                                        {{ $mahasiswa->tempat }}
+                                                    @endif
+                                                </td>
+                                                <td>
+                                                    <center>
+                                                        <table>
+                                                            <tr>
+                                                                @if ($mahasiswa->tanggal_semhas == null)
+                                                                    <td>
+                                                                        <form action="{{ route('add_jd_semhas') }}">
+                                                                            @csrf
+                                                                            <input type="hidden" name="nim"
+                                                                                value="{{ $mahasiswa->nim }}">
+                                                                            <input type="hidden" name="nama"
+                                                                                value="{{ $mahasiswa->nama }}">
+                                                                            <button type="submit"
+                                                                                class="btn btn-success btn-sm"><i
+                                                                                    class="bi bi-plus-square"></i>&nbsp;&nbsp;Jadwalkan</button>
+                                                                        </form>
+                                                                    </td>
+                                                                @endif
+                                                                @if ($mahasiswa->tanggal_semhas != null)
+                                                                    <td>
+                                                                        <form action="{{ route('edit_jd_semhas') }}"
+                                                                            method="POST">
+                                                                            @csrf
+                                                                            <input type="hidden" name="nama"
+                                                                                value="{{ $mahasiswa->nama }}">
+                                                                            <input type="hidden" name="nim"
+                                                                                value="{{ $mahasiswa->nim }}">
+                                                                            <button type="submit"
+                                                                                class="btn btn-warning btn-sm"><i
+                                                                                    class="bi bi-pencil-square"></i>&nbsp;&nbsp;</button>
+                                                                        </form>
+                                                                    </td>
+                                                                    <td>
+                                                                        <form action="{{ route('delete_jd_semhas') }}"
+                                                                            method="POST">
+                                                                            @csrf
+                                                                            <input type="hidden" name="nim"
+                                                                                value="{{ $mahasiswa->nim }}">
+                                                                            <button type="submit"
+                                                                                class="btn btn-danger btn-sm"
+                                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus jadwal ini? Anda tidak akan dapat mengembalikan data yang telah dihapus.')"><i
+                                                                                    class="bi bi-trash"></i>&nbsp;&nbsp;</button>
+                                                                        </form>
+                                                                    </td>
+                                                                @endif
+                                                            </tr>
+                                                        </table>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                            <?php $i++; ?>
                                         @endforeach
                                     </tbody>
                                 </table><br><br><br>
                             </div>
                             <div class="d-felx justify-content-center">
                                 {{ $mahasiswas->links() }}
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>

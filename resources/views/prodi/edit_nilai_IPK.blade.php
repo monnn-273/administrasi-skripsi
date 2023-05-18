@@ -4,10 +4,10 @@
     <title>Prodi - Edit Nilai IPK</title>
 @endsection
 
-@section('sidebar')              
+@section('sidebar')
     <li class="sidebar-item ">
         <a href="/prodi/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
@@ -29,14 +29,14 @@
 
     <li class="sidebar-item ">
         <a href="/prodi/beritaacara" class='sidebar-link'>
-            <i class="bi bi-journal-plus"></i>
+
             <span>Berita Acara</span>
         </a>
     </li>
-                            
+
     <li class="sidebar-item  ">
         <a href="/prodi/undangan_daftar_peserta" class='sidebar-link'>
-            <i class="bi bi-journal-plus"></i>
+
             <span>Undangan dan Daftar Peserta</span>
         </a>
     </li>
@@ -47,38 +47,39 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li><li class="sidebar-item has-sub active">
+    </li>
+    <li class="sidebar-item has-sub active">
         <a href="#" class='sidebar-link'>
             <i class="bi bi-clipboard-plus"></i>
             <span>Input Nilai</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>                            
+    </li>
 @endsection
 
 
@@ -92,8 +93,8 @@
                 <div class="col-12 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('input_nilai')}}">Input Nilai</a></li>
-                            <li class="breadcrumb-item"><a href="{{route('nilai_IPK')}}">Input Nilai IPK</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('input_nilai') }}">Input Nilai</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('nilai_IPK') }}">Input Nilai IPK</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Edit Nilai IPK</li>
                         </ol>
                     </nav>
@@ -105,11 +106,11 @@
             <div class="row match-height">
                 <div class="card card-outline-secondary">
                     <div class="row align-items-center m-5">
-                        <div class="col-md mb-5">    
+                        <div class="col-md mb-5">
                             <!-- FORM PENGEDITAN NILAI -->
-                            <form class="form form-horizontal" action="{{route('store_upd_nilai_IPK')}}" method="POST">
+                            <form class="form form-horizontal" action="{{ route('store_upd_nilai_IPK') }}" method="POST">
                                 @csrf
-                                <input type="hidden" name="nim" value="{{$data->nim}}">
+                                <input type="hidden" name="nim" value="{{ $data->nim }}">
                                 <div class="form-body">
                                     <div class="row">
                                         <h3>Masukkan Nilai IPK Mahasiswa</h3> <br>
@@ -117,25 +118,30 @@
                                             <label>Nama Mahasiswa</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" class="form-control" required value="{{ $data->nama }}" disabled>
+                                            <input type="text" class="form-control" required value="{{ $data->nama }}"
+                                                disabled>
                                         </div>
                                         <div class="col-md-4">
                                             <label>NIM</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" class="form-control" required value="{{ $data->nim }}" disabled>
+                                            <input type="text" class="form-control" required value="{{ $data->nim }}"
+                                                disabled>
                                         </div><br><br><br>
                                         <div class="col-md-4">
                                             <label for="IPK">Nilai IPK</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="IPK" class="form-control  @error('IPK') is-invalid @enderror" name="IPK" value="{{$data->IPK}}" required autocomplete="IPK">
+                                            <input type="text" id="IPK"
+                                                class="form-control  @error('IPK') is-invalid @enderror" name="IPK"
+                                                value="{{ $data->IPK }}" required autocomplete="IPK">
                                             @error('IPK')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div><br><br><br>
                                         <center>
-                                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;&nbsp;Simpan</button>
+                                            <button type="submit" class="btn btn-primary"><i
+                                                    class="fa fa-save"></i>&nbsp;&nbsp;Simpan</button>
                                         </center>
                                     </div>
                                 </div>

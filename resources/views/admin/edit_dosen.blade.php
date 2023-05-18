@@ -4,25 +4,25 @@
     <title>Admin - Edit Data Dosen</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,13 +46,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -113,30 +113,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -147,19 +147,19 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
 @section('content')
@@ -185,89 +185,99 @@
             <div class="row match-height">
                 <div class="card card-outline-secondary">
                     <div class="row align-items-center m-5">
-                        <div class="col-md mb-5">  
+                        <div class="col-md mb-5">
                             <br>
-                                <!-- FORM UPDATE DOSEN -->
-                                <form class="form form-horizontal" action="{{route('update_dosen')}}" method="POST">
-                                    @csrf
-                                    <input type="hidden" name="old_nip" value="{{$dosen->nip}}">
-                                    <input type="hidden" name="old_nidn" value="{{$dosen->nidn}}">
-                                    <input type="hidden" name="old_kode" value="{{$dosen->kode}}">
-                                    <div class="form-body">
-                                        <div class="row">
-                                            <div class="col-xl-12 col-md-6">
-                                                <div class="row">
-                                                    @csrf
-                                                    <div class="col-md-4">
-                                                        <label for="nama">Nama Lengkap</label>
-                                                    </div>
-                                                    <div class="col-md-8 form-group">
-                                                        <input type="text" id="nama" class="form-control @error('nama') is-invalid @enderror" name="nama" value="{{$dosen->nama}}">
-                                                        @error('nama')
+                            <!-- FORM UPDATE DOSEN -->
+                            <form class="form form-horizontal" action="{{ route('update_dosen') }}" method="POST">
+                                @csrf
+                                <input type="hidden" name="old_nip" value="{{ $dosen->nip }}">
+                                <input type="hidden" name="old_nidn" value="{{ $dosen->nidn }}">
+                                <input type="hidden" name="old_kode" value="{{ $dosen->kode }}">
+                                <div class="form-body">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-6">
+                                            <div class="row">
+                                                @csrf
+                                                <div class="col-md-4">
+                                                    <label for="nama">Nama Lengkap</label>
+                                                </div>
+                                                <div class="col-md-8 form-group">
+                                                    <input type="text" id="nama"
+                                                        class="form-control @error('nama') is-invalid @enderror"
+                                                        name="nama" value="{{ $dosen->nama }}">
+                                                    @error('nama')
+                                                        <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="new_nip">NIP</label>
+                                                </div>
+                                                <div class="col-md-8 form-group">
+                                                    <input type="text" id="new_nip"
+                                                        class="form-control @error('new_nip') is-invalid @enderror"
+                                                        name="new_nip" value="{{ $dosen->nip }}">
+                                                    @error('new_nip')
+                                                        <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="new_nidn">NIDN</label>
+                                                </div>
+                                                <div class="col-md-8 form-group">
+                                                    <input type="text" id="new_nidn"
+                                                        class="form-control @error('new_nidn') is-invalid @enderror"
+                                                        name="new_nidn" value="{{ $dosen->nidn }}">
+                                                    @error('new_nidn')
+                                                        <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="new_kode">Kode</label>
+                                                </div>
+                                                <div class="col-md-8 form-group">
+                                                    <input type="text" id="new_kode"
+                                                        class="form-control @error('new_kode') is-invalid @enderror"
+                                                        name="new_kode" value="{{ $dosen->kode }}">
+                                                    @error('new_kode')
+                                                        <div class="text-danger">{{ $message }}</div>
+                                                    @enderror
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label>Jenis Kelamin</label>
+                                                </div>
+                                                <div class="col-md-8 form-group">
+                                                    <fieldset class="form-group">
+                                                        <select class="form-select @error('sex') is-invalid @enderror"
+                                                            id="basicSelect" name="sex">
+                                                            @if ($dosen->jenis_kelamin == 'laki-laki')
+                                                                <option value="laki-laki">Laki-laki</option>
+                                                                <option value="perempuan">Perempuan</option>
+                                                            @else
+                                                                <option value="perempuan">Perempuan</option>
+                                                                <option value="laki-laki">Laki-laki</option>
+                                                            @endif
+                                                        </select>
+                                                        @error('sex')
                                                             <div class="text-danger">{{ $message }}</div>
                                                         @enderror
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="new_nip">NIP</label>
-                                                    </div>
-                                                    <div class="col-md-8 form-group">
-                                                        <input type="text" id="new_nip" class="form-control @error('new_nip') is-invalid @enderror" name="new_nip" value="{{$dosen->nip}}">
-                                                        @error('new_nip')
-                                                        <div class="text-danger">{{ $message }}</div>
-                                                        @enderror
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="new_nidn">NIDN</label>
-                                                    </div>
-                                                    <div class="col-md-8 form-group">
-                                                        <input type="text" id="new_nidn" class="form-control @error('new_nidn') is-invalid @enderror" name="new_nidn" value="{{$dosen->nidn}}">
-                                                        @error('new_nidn')
-                                                        <div class="text-danger">{{ $message }}</div>
-                                                        @enderror
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="new_kode">Kode</label>
-                                                    </div>
-                                                    <div class="col-md-8 form-group">
-                                                        <input type="text" id="new_kode" class="form-control @error('new_kode') is-invalid @enderror" name="new_kode" value="{{$dosen->kode}}">
-                                                        @error('new_kode')
-                                                        <div class="text-danger">{{ $message }}</div>
-                                                        @enderror
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label>Jenis Kelamin</label>
-                                                    </div>
-                                                    <div class="col-md-8 form-group">
-                                                        <fieldset class="form-group">
-                                                            <select class="form-select @error('sex') is-invalid @enderror" id="basicSelect" name="sex">
-                                                                @if($dosen->jenis_kelamin == "laki-laki")
-                                                                <option value="laki-laki">Laki-laki</option>
-                                                                <option value="perempuan">Perempuan</option>
-                                                                @else
-                                                                <option value="perempuan">Perempuan</option>
-                                                                <option value="laki-laki">Laki-laki</option>
-                                                                @endif
-                                                            </select>
-                                                            @error('sex')
-                                                                <div class="text-danger">{{ $message }}</div>
-                                                            @enderror
-                                                        </fieldset>
-                                                    </div>
+                                                    </fieldset>
                                                 </div>
-                                                <div class="col=xl-8">
-                                                    <center><button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;&nbsp;Simpan</button></center>
-                                                </div>
+                                            </div>
+                                            <div class="col=xl-8">
+                                                <center><button type="submit" class="btn btn-primary"><i
+                                                            class="fa fa-save"></i>&nbsp;&nbsp;Simpan</button></center>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                                <!-- END OF FORM UPDATE DOSEN -->
-                            </div>
+                                </div>
+                            </form>
+                            <!-- END OF FORM UPDATE DOSEN -->
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
 
     </div>
 @endsection

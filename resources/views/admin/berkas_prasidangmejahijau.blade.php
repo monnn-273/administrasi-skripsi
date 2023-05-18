@@ -4,25 +4,25 @@
     <title>Admin - Pra Sidang Meja Hijau</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,13 +46,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -113,30 +113,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -147,21 +147,21 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
-        
+
 @section('content')
     <div class="page-heading">
         <div class="page-title">
@@ -184,7 +184,9 @@
         <div class="card">
             <div class="card-body">
                 <h5>Daftar Peserta Sidang : </h5>
-                <a href="/admin/cetakSidang"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;Cetak Undangan dan Peserta Sidang</button></a>
+                <a href="/admin/cetakSidang"><button type="button" class="btn btn-primary btn-sm"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;Cetak
+                        Undangan dan Peserta Sidang</button></a>
             </div>
         </div>
     </section>
@@ -192,15 +194,15 @@
     <section class="section">
         <div class="card">
             <div class="card-body">
-            @if(session('status'))
+                @if (session('status'))
                     <div class="alert alert-success alert-dismissible show fade">
-                        <i class="bi bi-check-circle"></i> {{session('status')}}
+                        <i class="bi bi-check-circle"></i> {{ session('status') }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
-                @if(session('prohibited'))
+                @if (session('prohibited'))
                     <div class="alert alert-danger alert-dismissible show fade">
-                        <i class="bi bi-exclamation-triangle"></i> {{session('prohibited')}}
+                        <i class="bi bi-exclamation-triangle"></i> {{ session('prohibited') }}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                 @endif
@@ -217,63 +219,88 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $i ?> 
-                        @for($i = 0; $i <= (count($query)-1); $i+=2)
-                        <tr>
-                            <td>{{$query[$i]->nama}} ({{$query[$i]->nim}})</td>
-                            <td>
-                                <center>
-                                <a href="/admin/formPersetujuanSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;cetak</button></a>
-                                </center>
-                            </td>
-                            @if($nilai[$i]->total_semhas !=NULL)
-                            <td>
-                                <center>
-                                <a href="/admin/beritaAcaraSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;cetak</button></a>
-                                </center>
-                            </td>
-                            @else
-                            <td>
-                                <center>
-                                <a href="/admin/beritaAcaraSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;cetak</button></a>
-                                </center>
-                            </td>
-                            @endif
-                            <td>
-                                <center>
-                                <a href="/admin/lembarKendaliSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;cetak</button></a>
-                                </center>
-                            </td>
-                            <td>
-                                <center>
-                                <a href="/admin/kataPengantarSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;cetak</button></a>
-                                </center>
-                            </td>
-                            <td>
-                                <center>
-                                <a href="/admin/formPenilaianSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-printer"></i>&nbsp;cetak</button></a>
-                                </center>
-                            </td>
-                            <td>
-                                @if($query[$i]->no_statusAkses == 7)
-                                    <p>Mahasiswa dinyatakan lulus.</p>
+                        <?php $i; ?>
+                        @for ($i = 0; $i <= count($query) - 1; $i += 2)
+                            <tr>
+                                <td>{{ $query[$i]->nama }} ({{ $query[$i]->nim }})</td>
+                                <td>
+                                    <center>
+                                        <a href="/admin/formPersetujuanSidang/{{ $query[$i]->nim }}"><button
+                                                type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i
+                                                    class="bi bi-printer"></i>&nbsp;cetak</button></a>
+                                    </center>
+                                </td>
+                                @if ($nilai[$i]->total_semhas != null)
+                                    <td>
+                                        <center>
+                                            <a href="/admin/beritaAcaraSidang/{{ $query[$i]->nim }}"><button
+                                                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"><i
+                                                        class="bi bi-printer"></i>&nbsp;cetak</button></a>
+                                        </center>
+                                    </td>
                                 @else
-                                <center>
-                                    <table>
-                                        <tr>
-                                            <td>
-                                                <a href="/admin/approveSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-check-circle"></i> &nbsp;Approve</button></a>
-                                            </td>
-                                            <td>
-                                                <a href="/admin/declineSidang/{{$query[$i]->nim}}"><button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-x-circle"></i> &nbsp;  Decline</button></a>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </center>
+                                    <td>
+                                        <center>
+                                            <a href="/admin/beritaAcaraSidang/{{ $query[$i]->nim }}"><button
+                                                    type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal"><i
+                                                        class="bi bi-printer"></i>&nbsp;cetak</button></a>
+                                        </center>
+                                    </td>
                                 @endif
-                            </td>
-                        </tr>     
-                        @endfor 
+                                <td>
+                                    <center>
+                                        <a href="/admin/lembarKendaliSidang/{{ $query[$i]->nim }}"><button type="button"
+                                                class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i
+                                                    class="bi bi-printer"></i>&nbsp;cetak</button></a>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <a href="/admin/kataPengantarSidang/{{ $query[$i]->nim }}"><button type="button"
+                                                class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i
+                                                    class="bi bi-printer"></i>&nbsp;cetak</button></a>
+                                    </center>
+                                </td>
+                                <td>
+                                    <center>
+                                        <a href="/admin/formPenilaianSidang/{{ $query[$i]->nim }}"><button type="button"
+                                                class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal"><i
+                                                    class="bi bi-printer"></i>&nbsp;cetak</button></a>
+                                    </center>
+                                </td>
+                                <td>
+                                    @if ($query[$i]->no_statusAkses == 7)
+                                        <p>Mahasiswa dinyatakan lulus.</p>
+                                    @else
+                                        <center>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <a href="/admin/approveSidang/{{ $query[$i]->nim }}"><button
+                                                                type="button" class="btn btn-success btn-sm"
+                                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                                    class="bi bi-check-circle"></i>
+                                                                &nbsp;Approve</button></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="/admin/declineSidang/{{ $query[$i]->nim }}"><button
+                                                                type="button" class="btn btn-danger btn-sm"
+                                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                                    class="bi bi-x-circle"></i> &nbsp; Decline</button></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </center>
+                                    @endif
+                                </td>
+                            </tr>
+                        @endfor
                     </tbody>
                 </table>
             </div>

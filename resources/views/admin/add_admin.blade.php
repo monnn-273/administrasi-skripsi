@@ -4,29 +4,29 @@
     <title>Admin - Tambahkan Admini</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
-           
+
     <li class="sidebar-item has-sub">
         <a href="#" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,13 +46,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -113,30 +113,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -147,19 +147,19 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
 @section('content')
@@ -186,9 +186,9 @@
             <div class="row match-height">
                 <div class="card card-outline-secondary">
                     <div class="row align-items-center m-5">
-                        <div class="col-md mb-5">    
+                        <div class="col-md mb-5">
                             <!-- FORM REGISTERATION OF ADMIN -->
-                            <form class="form form-horizontal" action="{{route('add_admin')}}" method="POST">
+                            <form class="form form-horizontal" action="{{ route('add_admin') }}" method="POST">
                                 @csrf
                                 <div class="form-body">
                                     <div class="row">
@@ -199,7 +199,9 @@
                                             <label for="username">Username</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="username" class="form-control  @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" autocomplete="name">
+                                            <input type="text" id="username"
+                                                class="form-control  @error('username') is-invalid @enderror"
+                                                name="username" value="{{ old('username') }}" autocomplete="name">
                                             @error('username')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
@@ -209,22 +211,27 @@
                                             <label for="email">Email</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="email" id="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" autocomplete="email">
+                                            <input type="email" id="email"
+                                                class="form-control @error('email') is-invalid @enderror" name="email"
+                                                value="{{ old('email') }}" autocomplete="email">
                                             @error('email')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
 
                                         <div class="col-md-4">
-                                            <label for ="pw">Password</label>
+                                            <label for="pw">Password</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="password" id="pw" class="form-control @error('pw') is-invalid @enderror" name="pw" value="{{ old('pw') }}" autocomplete="pw">
+                                            <input type="password" id="pw"
+                                                class="form-control @error('pw') is-invalid @enderror" name="pw"
+                                                value="{{ old('pw') }}" autocomplete="pw">
                                             @error('password')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
                                         </div>
-                                        <br><br><hr><br>
+                                        <br><br>
+                                        <hr><br>
                                         <!-- END DATA AKUN -->
 
                                         <!-- DATA PRIBADI ADMIN -->
@@ -233,7 +240,9 @@
                                             <label for="nama">Nama Lengkap</label>
                                         </div>
                                         <div class="col-md-8 form-group">
-                                            <input type="text" id="nama" class="form-control  @error('nama') is-invalid @enderror" name="nama" required value="{{ old('nama') }}" autocomplete="nama">
+                                            <input type="text" id="nama"
+                                                class="form-control  @error('nama') is-invalid @enderror" name="nama"
+                                                required value="{{ old('nama') }}" autocomplete="nama">
                                             @error('nama')
                                                 <div class="text-danger">{{ $message }}</div>
                                             @enderror
@@ -242,7 +251,9 @@
                                             <label for="sex">Status</label>
                                         </div>
                                         <div class="col-md-8">
-                                            <select class="form-control  @error('status') is-invalid @enderror" id="sex" name="status" required value="{{ old('status') }}" autocomplete="status">
+                                            <select class="form-control  @error('status') is-invalid @enderror"
+                                                id="sex" name="status" required value="{{ old('status') }}"
+                                                autocomplete="status">
                                                 <option value=""></option>
                                                 <option value="admin">Admin</option>
                                                 <option value="super admin">Super Admin</option>
@@ -253,10 +264,11 @@
                                         </div>
                                         <br><br><br>
                                         <!-- END DATA PRIBADI ADMIN -->
-                                        
+
                                         <br><br><br>
                                         <center>
-                                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;&nbsp;Simpan</button>
+                                            <button type="submit" class="btn btn-primary"><i
+                                                    class="fa fa-save"></i>&nbsp;&nbsp;Simpan</button>
                                         </center>
                                     </div>
                                 </div>

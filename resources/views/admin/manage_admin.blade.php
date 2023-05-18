@@ -4,25 +4,25 @@
     <title>Admin - Manajemen Administrator</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,7 +46,7 @@
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
@@ -87,13 +87,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -105,30 +105,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -139,19 +139,19 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
 @section('content')
@@ -177,18 +177,20 @@
             <div class="row match-height">
                 <div class="card card-outline-secondary">
                     <div class="row align-items-center m-5">
-                        <div class="col-xl-12 mb-6">    
+                        <div class="col-xl-12 mb-6">
                             <!-- DAFTAR ADMIN    -->
                             <h5>Daftar Admin</h5>
-                            @if (Auth::user()->admin->status == "super admin")
-                                <a href="/admin/add_admin" class="btn btn-success btn-sm"><i class="bi bi-plus-circle"></i>&nbsp;&nbsp;Tambah Admin</a>
+                            @if (Auth::user()->admin->status == 'super admin')
+                                <a href="/admin/add_admin" class="btn btn-success btn-sm"><i
+                                        class="bi bi-plus-circle"></i>&nbsp;&nbsp;Tambah Admin</a>
                             @endif
                             <br><br>
                             <div class="table-responsive">
-                                @if(session('status'))
+                                @if (session('status'))
                                     <div class="alert alert-success alert-dismissible show fade">
-                                        <i class="bi bi-check-circle"></i> {{session('status')}}
-                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        <i class="bi bi-check-circle"></i> {{ session('status') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                            aria-label="Close"></button>
                                     </div>
                                 @endif
                                 <table class="table table-bordered mb-0 text-center">
@@ -202,53 +204,63 @@
                                     </thead>
                                     <tbody>
                                         <?php $i = 1; ?>
-                                        @foreach($admins as $admin)
-                                        <tr>
-                                            <td>{{$i}}</td>
-                                            <td class="text-bold-500">{{$admin->nama}}</td>
-                                            <td>{{$admin->status}}</td>
-                                            <td>
-                                                <center>
-                                                    <table>
-                                                        <tr>
-                                                            @if(Auth::user()->admin->status == "super admin" || Auth::user()->id == $admin->id_user)
-                                                            <td>                                                       
-                                                                <form action="/admin/edit_admin" >
-                                                                    @csrf
-                                                                    <input type= "hidden" name= "id" value= "{{$admin->id}}">
-                                                                    <button type="submit" class="btn btn-warning btn-sm"><i class="bi bi-pencil-square"></i>&nbsp;&nbsp;Edit</button>
-                                                                </form>
-                                                            </td>
-                                                            @else <p>Anda tidak memiliki akses mengupdate atau menghapus data ini.</p><br>
-                                                            @endif
-                                                            <td>
-                                                            @if(Auth::user()->admin->status == "super admin")
-                                                                @if(Auth::user()->admin->id !== $admin->id)
-                                                                <form action="{{'/admin/delete_adm'}}" method="POST">
-                                                                    @csrf
-                                                                    <input type="hidden" name="id" value="{{$admin->id_user}}">
-                                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data admin ini? Anda tidak akan dapat mengembalikan data yang telah dihapus.')"><i class="bi bi-trash"></i>&nbsp;&nbsp;Hapus</button>
-                                                                </form>
+                                        @foreach ($admins as $admin)
+                                            <tr>
+                                                <td>{{ $i }}</td>
+                                                <td class="text-bold-500">{{ $admin->nama }}</td>
+                                                <td>{{ $admin->status }}</td>
+                                                <td>
+                                                    <center>
+                                                        <table>
+                                                            <tr>
+                                                                @if (Auth::user()->admin->status == 'super admin' || Auth::user()->id == $admin->id_user)
+                                                                    <td>
+                                                                        <form action="/admin/edit_admin">
+                                                                            @csrf
+                                                                            <input type="hidden" name="id"
+                                                                                value="{{ $admin->id }}">
+                                                                            <button type="submit"
+                                                                                class="btn btn-warning btn-sm"><i
+                                                                                    class="bi bi-pencil-square"></i>&nbsp;&nbsp;Edit</button>
+                                                                        </form>
+                                                                    </td>
+                                                                @else
+                                                                    <p>Anda tidak memiliki akses mengupdate atau menghapus
+                                                                        data ini.</p><br>
                                                                 @endif
-                                                            </td>
-                                                            @endif
-                                                        </tr>
-                                                    </table>
-                                                </center>   
-                                            </td>
+                                                                <td>
+                                                                    @if (Auth::user()->admin->status == 'super admin')
+                                                                        @if (Auth::user()->admin->id !== $admin->id)
+                                                                            <form action="{{ '/admin/delete_adm' }}"
+                                                                                method="POST">
+                                                                                @csrf
+                                                                                <input type="hidden" name="id"
+                                                                                    value="{{ $admin->id_user }}">
+                                                                                <button type="submit"
+                                                                                    class="btn btn-danger btn-sm"
+                                                                                    onclick="return confirm('Apakah Anda yakin ingin menghapus data admin ini? Anda tidak akan dapat mengembalikan data yang telah dihapus.')"><i
+                                                                                        class="bi bi-trash"></i>&nbsp;&nbsp;Hapus</button>
+                                                                            </form>
+                                                                        @endif
+                                                                </td>
+                                        @endif
                                         </tr>
-                                        <?php $i++; ?>
-                                        @endforeach
-                                    </tbody>
+                                </table>
+                                </center>
+                                </td>
+                                </tr>
+                                <?php $i++; ?>
+                                @endforeach
+                                </tbody>
                                 </table><br>
                             </div>
                             <div class="d-felx justify-content-center">
                                 {{ $admins->links() }}
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>    
+    </div>
 @endsection

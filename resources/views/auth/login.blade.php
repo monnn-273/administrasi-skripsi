@@ -1,94 +1,107 @@
 <!doctype html>
 <html lang="en">
-    <head>
-    	<title>Administrasi Skripsi</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{{asset('auth/css/style.css')}}">
-    </head>
 
-	<body>
-        <section class="ftco-section">
-            <div class="container">
+<head>
+    <title>Administrasi Tugas Akhir</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ asset('auth/css/style.css') }}">
+</head>
 
-                <!--TITLE  -->
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center mb-5">
-                        <h2 class="heading-section">Selamat datang!</h2>
-                        <p>Aplikasi ini dikembangkan untuk memanajemen proses administrasi skripsi mahasiswa/i program studi Teknologi Informasi Universitas Sumatera Utara. </p>
-                    </div>
+<body>
+    <section class="ftco-section">
+        <div class="container">
+
+            <!--TITLE  -->
+            <div class="row justify-content-start">
+                <div class="col-md-6 mb-5">
+                    {{-- <h1 class="heading-section" style="font-family: Barlow, sans-serif; font-weight:bolder">Thesis
+                        Administration
+                        System
+                    </h1> --}}
+                    <br><br>
+                    <h1 class="heading-section" style="font-family: Barlow, sans-serif; font-weight:bolder">
+                        Sistem Administrasi Tugas Akhir</h1>
+                    <p style="color: black">Selamat Datang <br>
+                        Halaman login ini diperuntukkan bagi : <br>
+                        1. Mahasiswa Teknologi Informasi <br>
+                        2. Dosen (Kepala Program Studi, Sekretaris Program Studi, Kepala Laboratorium, Dosen Pembimbing
+                        , Dosen Penguji) <br>
+                    </p>
                 </div>
-                <!-- END TITLE SECTION -->
-
-                <!-- LOGIN  SECTION-->
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="wrap">
-                            <div class="img" style="background-image: url(auth/images/graduation.jpg);"></div>
-                            <div class="login-wrap p-4 p-md-5">
+                <div class="col-md-8 col-lg-6">
+                    <div class="wrap">
+                        <div class="login-wrap p-4 p-md-5">
                             <div class="col-md-12 text-center mb-5">
-                                <h2 class="heading-section">Login untuk melanjutkan</h2>
+                                <h2 class="heading-section">LOGIN</h2>
                             </div>
 
-                                <!-- LOGIN FORM -->
-                                <form method="POST" action="{{ route('login') }}" class="signin-form">
+                            <!-- LOGIN FORM -->
+                            <form method="POST" action="{{ route('login') }}" class="signin-form">
                                 @csrf
-                                    <div class="form-group mt-3">
-                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                                        <label class="form-control-placeholder" for="email">Email Address</label>
-                                        @error('email')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
+                                {{-- <div class="form-group mt-3 mb-2">
+                                    <input id="email" type="email"
+                                        class="form-control @error('email') is-invalid @enderror" name="email"
+                                        value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    <label class="form-control-placeholder" for="email">NIP/NIDN/NIM</label>
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div> --}}
+                                <div class="form-group mt-3 mb-2">
+                                    <input id="username" type="text"
+                                        class="form-control @error('username') is-invalid @enderror" name="username"
+                                        value="{{ old('username') }}" required autocomplete="username" autofocus>
+                                    <label class="form-control-placeholder" for="username">NIP/NIDN/NIM</label>
+                                    @error('username')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
 
-                                    <div class="form-group">
-                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                                        <label class="form-control-placeholder" for="password">Password</label>
-                                        @error('password')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{ $message }}</strong>
-                                            </span>
-                                        @enderror
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="form-control btn btn-primary rounded submit px-3">Sign In</button>
-                                    </div>
-                                    <div class="form-group d-md-flex">
-                                        <div class="w-50 text-left">
-                                            <label for="remember" class="checkbox-wrap checkbox-primary mb-0">Remember Me
-                                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </div>
-                                        <div class="w-50 text-md-right">
-                                            @if (Route::has('password.request'))
-                                                <a href="{{ route('password.request') }}">
-                                                    {{ __('Forgot Your Password?') }}
-                                                </a>
-                                            @endif
-                                        </div>
-                                    </div>
-                                </form>
-                                <!-- END OF FORM LOGIN -->
+                                <div class="form-group mt-6">
+                                    <input id="password" type="password"
+                                        class="form-control @error('password') is-invalid @enderror" name="password"
+                                        required autocomplete="current-password">
+                                    <label class="form-control-placeholder" for="password">Password</label>
+                                    @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit"
+                                        class="form-control btn btn-success rounded submit px-3">Masuk</button>
+                                </div>
+                            </form>
+                            <!-- END OF FORM LOGIN -->
 
-                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- END LOGIN SECTION -->
             </div>
-        </section>
+            <!-- END TITLE SECTION -->
 
-        <!-- ANY NECESSARY SCRIPT -->
-        <script src="{{asset('js/jquery.min.js')}}"></script>
-        <script src="{{asset('js/popper.js')}}"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/main.js')}}"></script>
+            <!-- LOGIN  SECTION-->
+            <div class="row justify-content-center">
 
-	</body>
+            </div>
+            <!-- END LOGIN SECTION -->
+        </div>
+    </section>
+
+    <!-- ANY NECESSARY SCRIPT -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/popper.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+
+</body>
+
 </html>
-

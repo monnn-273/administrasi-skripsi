@@ -4,25 +4,25 @@
     <title>Admin - Riwayat Aktivitas</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,13 +46,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -113,30 +113,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -147,19 +147,19 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
 @section('content')
@@ -173,7 +173,7 @@
                 <div class="col-xl-4 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{('/admin/dashbboard')}}">Back to Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{ '/admin/dashbboard' }}">Back to Dashboard</a></li>
                         </ol>
                     </nav>
                 </div>
@@ -188,8 +188,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Riwayat Pendaftaran Dosen Pembimbing</h4>
-                                <p>Lihat admin mana yang mendaftarkan dosen pembimbing mahasiswa disini! </p> <hr>
-                                <a href="{{route('log_pendaftaran_dosbing')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Lihat admin mana yang mendaftarkan dosen pembimbing mahasiswa disini! </p>
+                                <hr>
+                                <a href="{{ route('log_pendaftaran_dosbing') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i> Access</a>
                             </div>
                         </div>
                     </div>
@@ -202,8 +204,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Riwayat Pengubahan Dosen Pembimbing</h4>
-                                <p>Lihat admin mana yang mengubah dosen pembimbing mahasiswa disini! </p> <hr>
-                                <a href="{{route('log_pengubahan_dosbing')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Lihat admin mana yang mengubah dosen pembimbing mahasiswa disini! </p>
+                                <hr>
+                                <a href="{{ route('log_pengubahan_dosbing') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i> Access</a>
                             </div>
                         </div>
                     </div>
@@ -216,8 +220,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Riwayat Penghapusan Dosen Pembimbing</h4>
-                                <p>Lihat admin mana yang menghapus dosen pembimbing mahasiswa disini! </p> <hr>
-                                <a href="{{route('log_penghapusan_dosbing')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Lihat admin mana yang menghapus dosen pembimbing mahasiswa disini! </p>
+                                <hr>
+                                <a href="{{ route('log_penghapusan_dosbing') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i> Access</a>
                             </div>
                         </div>
                     </div>
@@ -230,8 +236,11 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Riwayat Pendaftaran Judul Skripsi</h4>
-                                <p>Judul Skripsi dapat didaftarkan oleh mahasiswa dan admin. Lihat disini untuk mengetahui siapa yang mendaftarkan judul skripsi mahasiswa! </p> <hr>
-                                <a href="{{route('log_pendaftaran_skripsi')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Judul Skripsi dapat didaftarkan oleh mahasiswa dan admin. Lihat disini untuk mengetahui
+                                    siapa yang mendaftarkan judul skripsi mahasiswa! </p>
+                                <hr>
+                                <a href="{{ route('log_pendaftaran_skripsi') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i> Access</a>
                             </div>
                         </div>
                     </div>
@@ -244,8 +253,11 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Riwayat Pengubahan Judul Skripsi</h4>
-                                <p>Judul skripsi yang sudah didaftarkan juga dapat dilakukan oleh mahasiswa dan admin! Lihat riwayat perubahan skripsi disini</p> <hr>
-                                <a href="{{route('log_pengubahan_skripsi')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Judul skripsi yang sudah didaftarkan juga dapat dilakukan oleh mahasiswa dan admin! Lihat
+                                    riwayat perubahan skripsi disini</p>
+                                <hr>
+                                <a href="{{ route('log_pengubahan_skripsi') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i> Access</a>
                             </div>
                         </div>
                     </div>
@@ -258,8 +270,10 @@
                         <div class="card-content">
                             <div class="card-body">
                                 <h4 class="card-title">Riwayat Penghapusan Judul Skripsi</h4>
-                                <p>Lihat disini untuk mengetahui penghapusan data skripsi yang dilakukan oleh admin!</p> <hr>
-                                <a href="{{route('log_penghapusan_skripsi')}}" class="btn btn-primary"><i class="bi bi-hand-index"></i> Access</a>
+                                <p>Lihat disini untuk mengetahui penghapusan data skripsi yang dilakukan oleh admin!</p>
+                                <hr>
+                                <a href="{{ route('log_penghapusan_skripsi') }}" class="btn btn-primary"><i
+                                        class="bi bi-hand-index"></i> Access</a>
                             </div>
                         </div>
                     </div>

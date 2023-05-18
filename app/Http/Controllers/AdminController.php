@@ -1476,7 +1476,7 @@ class AdminController extends Controller
     // END OF FUNGSI UNTUK MENU RIWAYAT AKTIVITAS
     /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-    //FUNGSI UNTUK MENU PROFILE SAYA
+    //FUNGSI UNTUK MENU Profil
     public function profile_saya()
     {
         return view('admin.profile');
@@ -1519,7 +1519,7 @@ class AdminController extends Controller
         
 
     }
-    // END OF FUNGSI UNTUK MENU PROFILE SAYA
+    // END OF FUNGSI UNTUK MENU Profil
     /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
     // FUNGSI UNTUK MENU PRA SEMHAS

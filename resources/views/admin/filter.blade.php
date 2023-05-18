@@ -4,25 +4,25 @@
     <title>Admin - Mahasiswa Tugas Akhir</title>
 @endsection
 
-@section('sidebar')        
+@section('sidebar')
     <li class="sidebar-item">
         <a href="/admin/dashboard" class='sidebar-link'>
-            <i class="bi bi-grid-fill"></i>
+
             <span>Dashboard</span>
         </a>
     </li>
 
     <li class="sidebar-item has-sub active">
-        <a href="{{route('mhs_ta')}}" class='sidebar-link'>
+        <a href="{{ route('mhs_ta') }}" class='sidebar-link'>
             <i class="bi bi-people-fill"></i>
             <span>Mahasiswa TA</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item active">
-                <a href="{{route('aktif')}}">Mahasiswa Aktif</a>
+                <a href="{{ route('aktif') }}">Mahasiswa Aktif</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('alumni')}}">Lulus / Alumni</a>
+                <a href="{{ route('alumni') }}">Lulus / Alumni</a>
             </li>
         </ul>
     </li>
@@ -34,10 +34,10 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosbing')}}">Dosen Pembimbing</a>
+                <a href="{{ route('daftar_dosbing') }}">Dosen Pembimbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('daftar_skripsi')}}">Judul Skripsi</a>
+                <a href="{{ route('daftar_skripsi') }}">Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_sempro">Berkas Administrasi</a>
@@ -46,13 +46,13 @@
     </li>
 
     <li class="sidebar-item has-sub">
-        <a href="{{route('prasemhas_menu')}}" class='sidebar-link'>
+        <a href="{{ route('prasemhas_menu') }}" class='sidebar-link'>
             <i class="bi bi-file-earmark-medical-fill"></i>
             <span>Pra Seminar Hasil</span>
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('daftar_dosenPenguji')}}">Dosen Penguji</a>
+                <a href="{{ route('daftar_dosenPenguji') }}">Dosen Penguji</a>
             </li>
             <li class="submenu-item ">
                 <a href="/admin/validasi_semhas">Berkas Administrasi</a>
@@ -95,13 +95,13 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sempro')}}">Seminar Proposal</a>
+                <a href="{{ route('jadwal_sempro') }}">Seminar Proposal</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_semhas')}}">Seminar Hasil</a>
+                <a href="{{ route('jadwal_semhas') }}">Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('jadwal_sidang')}}">Sidang Meja Hijau</a>
+                <a href="{{ route('jadwal_sidang') }}">Sidang Meja Hijau</a>
             </li>
         </ul>
     </li>
@@ -113,30 +113,30 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_dosbing')}}">Riwayat Pendaftaran Dosbing</a>
+                <a href="{{ route('log_pendaftaran_dosbing') }}">Riwayat Pendaftaran Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_dosbing')}}">Riwayat Pengubahan Dosbing</a>
+                <a href="{{ route('log_pengubahan_dosbing') }}">Riwayat Pengubahan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_dosbing')}}">Riwayat Penghapusan Dosbing</a>
+                <a href="{{ route('log_penghapusan_dosbing') }}">Riwayat Penghapusan Dosbing</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pendaftaran_skripsi')}}">Riwayat Pendaftaran Judul Skripsi</a>
+                <a href="{{ route('log_pendaftaran_skripsi') }}">Riwayat Pendaftaran Judul Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_pengubahan_skripsi')}}">Riwayat Pengubahan Skripsi</a>
+                <a href="{{ route('log_pengubahan_skripsi') }}">Riwayat Pengubahan Skripsi</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('log_penghapusan_skripsi')}}">Riwayat Penghapusan Skripsi</a>
+                <a href="{{ route('log_penghapusan_skripsi') }}">Riwayat Penghapusan Skripsi</a>
             </li>
         </ul>
     </li>
 
     <li class="sidebar-item">
-        <a href="{{route('profile_admin')}}" class='sidebar-link'>
-            <i class="bi bi-person-fill"></i>
-            <span>Profile Saya</span>
+        <a href="{{ route('profile_admin') }}" class='sidebar-link'>
+
+            <span>Profil</span>
         </a>
     </li>
 
@@ -147,22 +147,22 @@
         </a>
         <ul class="submenu">
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_IPK')}}">Input Nilai IPK</a>
+                <a href="{{ route('adm_nilai_IPK') }}">Input Nilai IPK</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_uji_program')}}">Input Nilai Uji Program</a>
+                <a href="{{ route('adm_nilai_uji_program') }}">Input Nilai Uji Program</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('adm_nilai_semhas')}}">Input Nilai Seminar Hasil</a>
+                <a href="{{ route('adm_nilai_semhas') }}">Input Nilai Seminar Hasil</a>
             </li>
             <li class="submenu-item ">
-                <a href="{{route('nilai_sidang_admin')}}">Input Nilai Sidang Meja Hijau</a>
+                <a href="{{ route('nilai_sidang_admin') }}">Input Nilai Sidang Meja Hijau</a>
             </li>
         </ul>
-    </li>   
+    </li>
 @endsection
 
-@section('content') 
+@section('content')
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
@@ -173,42 +173,43 @@
                 <div class="col-xl-4 col-md-6 order-md-2 order-first">
                     <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('mhs_ta')}}">Mahasiswa TA</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('mhs_ta') }}">Mahasiswa TA</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Mahasiswa Aktif</li>
                         </ol>
                     </nav>
                 </div>
             </div>
         </div>
-        
+
         <div class="row">
             <!-- FORM UNTUK CARI DATA MAHASISWA -->
-            <form action="{{route('cari_mhs')}}">
+            <form action="{{ route('cari_mhs') }}">
                 @csrf
                 <div class="row">
                     <div class="col-xl-11">
-                        <input type="text" class="form-control" name="keyword" placeholder="Cari berdasarkan nama, nim, angkatan, status skripsi, dsb...">
+                        <input type="text" class="form-control" name="keyword"
+                            placeholder="Cari berdasarkan nama, nim, angkatan, status skripsi, dsb...">
                     </div>
                     <div class="col-xl-1">
                         <button class="btn btn-primary" type="submit"><i class="b bi-search"></i> </button>
                     </div>
                 </div>
             </form>
-             <!-- END FORM CARI MAHASISWA -->
+            <!-- END FORM CARI MAHASISWA -->
         </div>
 
         <br>
         <div class="row">
             <!-- FORM  FILTER -->
             <div class="col-xl-5">
-                <form action="{{route('filter_mhs')}}">
+                <form action="{{ route('filter_mhs') }}">
                     @csrf
                     <div class="row">
                         <div class="col-xl-11">
-                            <select class="form-control " id="angkatan" name="angkatan" required >
+                            <select class="form-control " id="angkatan" name="angkatan" required>
                                 <option value="">Cari berdasarkan tahun angkatan</option>
-                                @foreach($angkatan as $akt)
-                                    <option  value="{{$akt->angkatan}}">{{$akt->angkatan}}</option>
+                                @foreach ($angkatan as $akt)
+                                    <option value="{{ $akt->angkatan }}">{{ $akt->angkatan }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -224,15 +225,15 @@
 
             <!-- FORM  FILTER 2 -->
             <div class="col-xl-5">
-                <form action="{{route('filter_mhs2')}}">
+                <form action="{{ route('filter_mhs2') }}">
                     @csrf
                     <div class="row">
                         <div class="col-xl-11">
-                            <input type="hidden" name="tahun" value="{{$tahun}}">
-                            <select class="form-control" id="no_statusAkses" name="no_statusAkses" required >
+                            <input type="hidden" name="tahun" value="{{ $tahun }}">
+                            <select class="form-control" id="no_statusAkses" name="no_statusAkses" required>
                                 <option value="">Cari berdasarkan status skripsi</option>
-                                @foreach($keterangan as $ket)
-                                    <option  value="{{$ket->no_statusAkses}}">{{$ket->keterangan}}</option>
+                                @foreach ($keterangan as $ket)
+                                    <option value="{{ $ket->no_statusAkses }}">{{ $ket->keterangan }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -248,65 +249,66 @@
         <br><br>
 
         <!-- DAFTAR MAHASISWA -->
-        <p class="text-muted"><i> Menampilkan {{$sum}} hasil yang sesuai untuk mahasiswa aktif angkatan {{$tahun}}. </i> </p>
+        <p class="text-muted"><i> Menampilkan {{ $sum }} hasil yang sesuai untuk mahasiswa aktif angkatan
+                {{ $tahun }}. </i> </p>
         <div class="row">
-            @foreach($mahasiswas as $mahasiswa)
-            <div class="col-md-6 col-lg-6">
-                <div class="card">
-                    <div class="card-body py-4 px-5">
-                        <div class="d-flex align-items-top">
-                            <div class="avatar avatar-xl">
-                                @if($mahasiswa->foto != NULL)
-                                <img src="../main/photos/{{$mahasiswa->foto}}" alt="Face 1">
-                                @else
-                                <img src="../main/photos/graduate_student.png" alt="Face 1">
-                                @endif
-                            </div>
-                            <div class="ms-3 name">
-                                <h5 class="font-bold">{{$mahasiswa->nama_mhs}}</h5>
-                                <h6 class="text-muted mb-0"> {{$mahasiswa->nim}}</h6>
-                                <br>
-                                <div class="progress progress-primary  mb-4">
-                                    <div class="progress-bar progress-label" role="progressbar" style="width: {{$mahasiswa->persentase_skripsi}}%" aria-valuenow="{{$mahasiswa->persentase_skripsi}}"
-                                        aria-valuemin="0" aria-valuemax="100">
+            @foreach ($mahasiswas as $mahasiswa)
+                <div class="col-md-6 col-lg-6">
+                    <div class="card">
+                        <div class="card-body py-4 px-5">
+                            <div class="d-flex align-items-top">
+                                <div class="avatar avatar-xl">
+                                    @if ($mahasiswa->foto != null)
+                                        <img src="../main/photos/{{ $mahasiswa->foto }}" alt="Face 1">
+                                    @else
+                                        <img src="../main/photos/graduate_student.png" alt="Face 1">
+                                    @endif
+                                </div>
+                                <div class="ms-3 name">
+                                    <h5 class="font-bold">{{ $mahasiswa->nama_mhs }}</h5>
+                                    <h6 class="text-muted mb-0"> {{ $mahasiswa->nim }}</h6>
+                                    <br>
+                                    <div class="progress progress-primary  mb-4">
+                                        <div class="progress-bar progress-label" role="progressbar"
+                                            style="width: {{ $mahasiswa->persentase_skripsi }}%"
+                                            aria-valuenow="{{ $mahasiswa->persentase_skripsi }}" aria-valuemin="0"
+                                            aria-valuemax="100">
+                                        </div>
                                     </div>
-                                </div> 
-                                <h6 class="text-muted mb-0"> {{$mahasiswa->keterangan}}</h6>
-                                <p class="text-muted text-sm">
+                                    <h6 class="text-muted mb-0"> {{ $mahasiswa->keterangan }}</h6>
+                                    <p class="text-muted text-sm">
                                     <table class="table mb-0">
                                         <tr>
                                             <td>Angkatan</td>
                                             <td>:</td>
-                                            <td>{{$mahasiswa->angkatan}}</td>
+                                            <td>{{ $mahasiswa->angkatan }}</td>
                                         </tr>
                                         <tr>
                                             <td>Judul</td>
                                             <td>:</td>
-                                            <td>{{$mahasiswa->judul_skripsi}}</td>
+                                            <td>{{ $mahasiswa->judul_skripsi }}</td>
                                         </tr>
                                         <tr>
                                             <td>Doping I</td>
                                             <td>:</td>
-                                            <td>{{$mahasiswa->nama_dosbing1}}</td>
+                                            <td>{{ $mahasiswa->nama_dosbing1 }}</td>
                                         </tr>
                                         <tr>
                                             <td>Doping II</td>
                                             <td>:</td>
-                                            <td>{{$mahasiswa->nama_dosbing2}}</td>
+                                            <td>{{ $mahasiswa->nama_dosbing2 }}</td>
                                         </tr>
                                     </table>
-                                </p>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             @endforeach
         </div>
         <!-- END OF DAFTAR MAHASISWA -->
 
-        <a href="{{route('aktif')}}"> Kembali </a>
+        <a href="{{ route('aktif') }}"> Kembali </a>
     </div>
-
-    
 @endsection
